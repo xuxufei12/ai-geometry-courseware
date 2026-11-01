@@ -1,0 +1,13 @@
+{
+  "name": "ai-geometry-courseware",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive Chinese geometry lessons for noncommercial education",
+  "scripts": {
+    "build": "node build.cjs",
+    "test": "node tests/geometry.cjs"
+  },
+  "devDependencies": {
+    "katex": "0.19.0"
+  }
+}
