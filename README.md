@@ -4,6 +4,8 @@
 
 **禁止商用。仅限非商业教学与学习，详见 [LICENSE](LICENSE)。**
 
+[在线打开几何实验室](https://xuxufei12.github.io/ai-geometry-courseware/)
+
 ## 内容
 
 | 专题 | 实验 | 可操作内容 |
@@ -38,7 +40,7 @@ npm install
 npm run build
 ```
 
-构建时保留 `dist/circle-distance.html`，其内嵌的公式字体用于新页面。部署内容从 `dist/` 同步到 `docs/`。第三方 KaTeX 保留其 MIT 许可，见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)。
+构建时保留 `dist/circle-distance.html`，其内嵌的公式字体用于新页面。构建脚本自动将部署内容从 `dist/` 同步到 `docs/`，推送到 `main` 后由 GitHub Pages 自动更新。第三方 KaTeX 保留其 MIT 许可，见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)。
 
 ## 使用限制
 
