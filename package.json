@@ -5,9 +5,11 @@
   "description": "Interactive Chinese geometry lessons for noncommercial education",
   "scripts": {
     "build": "node build.cjs",
-    "test": "node tests/geometry.cjs && node tests/chapters.cjs && node tests/numeric-input.cjs"
+    "test": "node tests/geometry.cjs && node tests/chapters.cjs && node tests/numeric-input.cjs && node tests/construction.cjs",
+    "test:browser": "node tests/construction-browser.cjs"
   },
   "devDependencies": {
+    "@playwright/test": "1.64.1",
     "katex": "0.19.0"
   }
 }

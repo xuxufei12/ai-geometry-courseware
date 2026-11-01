@@ -19,5 +19,8 @@ legacy=legacy.replace('</head>',()=>'<style id="numeric-input-style">'+numericCS
 legacy=legacy.replace("$('height').value=h;NumericInput.sync($('height'),h);","$('height').value=h;").replace("$('height').value=h;","$('height').value=h;NumericInput.sync($('height'),h);");
 legacy=legacy.replace('</body>',()=>'<script id="numeric-input-legacy">NumericInput.attach(document.getElementById("height"),{label:"弦到圆心的距离 OM",get:()=>h,set:setH});</script></body>');
 fs.writeFileSync(path.join(__dirname,'dist/circle-distance.html'),legacy);
+const drawingReplacements={'/*CONSTRUCTION_CSS*/':fs.readFileSync('src/construction.css','utf8')+numericCSS,'/*NUMERIC_JS*/':numericJS,'/*CONSTRUCTION_DATA*/':fs.readFileSync('src/construction-lessons.js','utf8'),'/*CONSTRUCTION_JS*/':fs.readFileSync('src/construction-app.js','utf8')};
+let drawingHtml=fs.readFileSync('src/construction.template.html','utf8');for(const [key,value] of Object.entries(drawingReplacements))drawingHtml=drawingHtml.replace(key,()=>value);
+fs.writeFileSync('dist/construction.html',drawingHtml);console.log('Built 6 guided construction classrooms');
 fs.cpSync(path.join(__dirname,'dist'),path.join(__dirname,'docs'),{recursive:true});
 
