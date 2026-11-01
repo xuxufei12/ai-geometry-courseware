@@ -1,0 +1,8 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),chapters=require('../src/chapters-data.json'),defs=require('../src/method-presets.cjs'),excerpts=require('../src/source-excerpts.json');
+const context={};vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(root,'src/method-geometry.js'),'utf8')+';globalThis.engine=MethodGeometry;',context);
+assert.equal(chapters.length,131);assert.equal(new Set(chapters.map(c=>c.id)).size,131);assert.deepEqual([1,2,3,4,5].map(t=>chapters.filter(c=>c.topic===t).length),[31,29,9,23,39]);
+let runs=0,assets=new Set(),seed=20261101;const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296};
+for(const c of chapters){const d=defs[c.method];assert(d,c.id);assert.equal(d.steps.length,3);assert(excerpts[c.id]?.length>0,c.id);for(const m of excerpts[c.id].matchAll(/src="([^"]+)"/g)){assets.add(m[1]);assert(fs.existsSync(path.join(root,'dist',m[1])),m[1])}
+for(let n=0;n<101;n++){const values=d.params.map(p=>n===0?p[1]:n===1?p[2]:n===2?p[3]:p[1]+random()*(p[2]-p[1]));for(let stage=0;stage<=3;stage++){const g=context.engine.make(c.method,values,stage,c.config||{});assert(g.checks.every(Boolean),c.id+' invariant');assert(g.metrics.every(m=>Number.isFinite(m.value)),c.id+' metrics');assert(Object.values(g.points).every(q=>q.p?.every(Number.isFinite)),c.id+' coordinates');assert(!/NaN|Infinity/.test(context.engine.render(g,{stage})),c.id+' svg');runs++}}}
+console.log(JSON.stringify({chapters:chapters.length,configurations:runs,sourceAssets:assets.size,status:'passed'}));

@@ -1,0 +1,3165 @@
+[
+  {
+    "id": "t1-m01",
+    "topic": 1,
+    "title": "模型1 倍长中线模型",
+    "group": "基础模型",
+    "sourceRange": [
+      155,
+      172
+    ],
+    "conditions": "△ABC中AD是BC边中线，延长AD到E使DE=AD，证明△ACD≌△EBD。",
+    "wordMethod": "倍长中线，连接BE，把分散边搬入△ABE。",
+    "sourceConclusion": "BE=AC；AE=2AD。",
+    "sourceProof": [
+      "CD=BD，AD=ED，∠ADC=∠EDB。",
+      "SAS得△ACD≌△EBD。",
+      "对应边相等完成长度搬运。"
+    ],
+    "flags": [],
+    "method": "median",
+    "sourceModel": "D为BC中点；E=2D−A。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型1 倍长中线模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m02",
+    "topic": 1,
+    "title": "模型2 一线三等角模型",
+    "group": "基础模型",
+    "sourceRange": [
+      238,
+      248
+    ],
+    "conditions": "该模型下的特殊一线三垂直：∠ABC=∠ACE=∠CDE=90°，AC=CE。",
+    "wordMethod": "用直角互余完成等角代换，AAS或ASA证明全等。",
+    "sourceConclusion": "AB=CD，BC=DE。",
+    "sourceProof": [
+      "两小三角形都为直角三角形。",
+      "由AC⊥CE与底线上的直角，∠ACB=∠CED。",
+      "斜边AC=CE，所以△ABC≌△CDE。"
+    ],
+    "flags": [],
+    "method": "three-perp",
+    "sourceModel": "B、C、D共线；AB、ED垂直BD；AC⊥CE且AC=CE。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型2 一线三等角模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m03",
+    "topic": 1,
+    "title": "模型3 半角模型",
+    "group": "基础模型",
+    "sourceRange": [
+      267,
+      304
+    ],
+    "conditions": "正方形ABCD，E∈BC，F∈CD，∠EAF=45°；证明EF=BE+DF。",
+    "wordMethod": "延长CB到G，使BG=DF；连接AG；两次全等。",
+    "sourceConclusion": "EF=BE+DF。",
+    "sourceProof": [
+      "AB=AD且BG=DF，直角夹边SAS得△ABG≌△ADF。",
+      "∠EAG=∠EAF=45°且AG=AF；共边AE得△AEG≌△AEF。",
+      "EF=EG=BE+BG=BE+DF。"
+    ],
+    "flags": [],
+    "method": "half-angle",
+    "sourceModel": "正方形与45°扇形；E、F均在边内。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型3 半角模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m04",
+    "topic": 1,
+    "title": "模型4 手拉手模型",
+    "group": "基础模型",
+    "sourceRange": [
+      319,
+      328
+    ],
+    "conditions": "△ABC与△ADE具有共同顶点A，AB=AC，AD=AE，∠BAC=∠DAE；证明BD=CE。",
+    "wordMethod": "旋转等角代换，SAS全等。",
+    "sourceConclusion": "BD=CE；对应连接线夹角等于旋转角。",
+    "sourceProof": [
+      "∠BAD=∠CAE（同向旋转的夹角不变）。",
+      "AB=AC，AD=AE，由SAS得△ABD≌△ACE。",
+      "BD=CE。"
+    ],
+    "flags": [
+      "仅核心结论BD=CE无条件安全；原文交点O的角平分线叙述需限制交点所在射线，不宜对所有转角照搬。"
+    ],
+    "method": "hand",
+    "sourceModel": "同向旋转同一角度将B→C、D→E。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型4 手拉手模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m05",
+    "topic": 1,
+    "title": "模型5 对角互补+邻边相等模型",
+    "group": "基础模型",
+    "sourceRange": [
+      342,
+      347
+    ],
+    "conditions": "∠EOF+∠ECF=180°，CE=CF；证明OC平分∠AOB（E∈OA，F∈OB）。",
+    "wordMethod": "从C向两边作垂线，构造全等；也可旋转。",
+    "sourceConclusion": "C到OE、OF距离相等；OC为内角平分线。",
+    "sourceProof": [
+      "对角互补得四点共圆。",
+      "相等弦CE=CF对应圆周角∠EOC=∠COF。",
+      "或作两垂线，通过等腰和互补角证两直角三角形全等。"
+    ],
+    "flags": [
+      "已查看原WMF：条件为∠EOF+∠ECF=180°，不是直角条件。"
+    ],
+    "method": "equal-supplement",
+    "sourceModel": "四边形OECF内接圆，CE=CF，C在∠EOF内。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型5 对角互补+邻边相等模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m06",
+    "topic": 1,
+    "title": "模型6 平行线夹中点模型",
+    "group": "基础模型",
+    "sourceRange": [
+      357,
+      364
+    ],
+    "conditions": "AB∥CD，E为BC中点，延长DE交AB于F，证明△DCE≌△FBE。",
+    "wordMethod": "有中点有平行，延长连接线构造八字全等。",
+    "sourceConclusion": "DE=EF，CD=BF。",
+    "sourceProof": [
+      "∠DCE=∠FBE，∠DEC=∠FEB。",
+      "CE=BE，由AAS得全等。"
+    ],
+    "flags": [],
+    "method": "parallel-midpoint",
+    "sourceModel": "AB∥CD；BE=CE；D,E,F共线。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型6 平行线夹中点模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m07",
+    "topic": 1,
+    "title": "模型7 角平分线相关模型",
+    "group": "基础模型",
+    "sourceRange": [
+      370,
+      388
+    ],
+    "conditions": "OP平分∠MON，P到两边垂足A、B；证明PA=PB，OA=OB。",
+    "wordMethod": "角平分线上的点向两边作垂线，构造直角全等。",
+    "sourceConclusion": "PA=PB。",
+    "sourceProof": [
+      "两直角三角形公共斜边OP，一锐角相等。",
+      "AAS/斜边锐角得△AOP≌△BOP。"
+    ],
+    "flags": [
+      "原文383尺规半径“大于OC且小于OD”与OC=OD矛盾，应改为两圆同半径且大于CD/2。"
+    ],
+    "method": "bisector",
+    "sourceModel": "∠MOP=∠PON；PA⊥OM，PB⊥ON。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型7 角平分线相关模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m08",
+    "topic": 1,
+    "title": "模型8 截长补短模型",
+    "group": "基础模型",
+    "sourceRange": [
+      414,
+      429
+    ],
+    "conditions": "AD平分∠BAC，∠C=2∠B，证明AB=AC+CD。",
+    "wordMethod": "截长：AB上取AE=AC，连接DE；补短：延长AC到E使CE=CD。",
+    "sourceConclusion": "AB=AC+CD。",
+    "sourceProof": [
+      "取AE=AC，SAS得△ADE≌△ADC，所以DE=DC。",
+      "∠AED=∠ACD=2∠B；由外角定理得∠EDB=∠B，所以EB=ED。",
+      "AB=AE+EB=AC+CD。"
+    ],
+    "flags": [],
+    "method": "cut-short",
+    "sourceModel": "AD角平分线，∠ACB=2∠ABC。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型8 截长补短模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m09",
+    "topic": 1,
+    "title": "模型9 鸡爪模型（构造手拉手）",
+    "group": "基础模型",
+    "sourceRange": [
+      458,
+      465
+    ],
+    "conditions": "等边△ABC中D在内部，将△ABD绕A旋转60°到△ACE，连接DE。",
+    "wordMethod": "绕顶点旋转60°，把AD、BD、CD集中在△CDE。",
+    "sourceConclusion": "CE=BD，DE=AD，CD不变。",
+    "sourceProof": [
+      "SAS/旋转给出△ABD≌△ACE。",
+      "AD=AE且∠DAE=60°，故△ADE等边，DE=AD。",
+      "新三角形CDE的三边是原来三条分散距离。"
+    ],
+    "flags": [
+      "原文460“得到等边△AEC”不成立，一般△AEC不等边，应写得到△ACE；原文498在等腰直角情形写60°需改90°。"
+    ],
+    "method": "chicken",
+    "sourceModel": "ABC等边；E为D绕A与B→C同向旋转60°的像。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型9 鸡爪模型（构造手拉手）",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m10",
+    "topic": 1,
+    "title": "模型10 绝配角模型",
+    "group": "基础模型",
+    "sourceRange": [
+      509,
+      515
+    ],
+    "conditions": "∠ABC=90°，D∈BC，∠C=2∠BAD；延长DB到E使BE=BD，证AC=EC。",
+    "wordMethod": "以直角边为对称轴补等长线段，构造等腰三角形。",
+    "sourceConclusion": "AC=EC。",
+    "sourceProof": [
+      "AB垂直平分DE，所以AE=AD，∠EAD=2∠BAD。",
+      "该角等于∠C，通过三角形角关系得∠CAE=∠AEC。",
+      "等角对等边得AC=EC。"
+    ],
+    "flags": [],
+    "method": "double-angle",
+    "sourceModel": "A=(0,a),B=(0,0),D=(d,0),E=(-d,0)，C位于D右侧。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型10 绝配角模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m11",
+    "topic": 1,
+    "title": "模型11 婆罗摩笈模型",
+    "group": "基础模型",
+    "sourceRange": [
+      523,
+      541
+    ],
+    "conditions": "正方形ABCD、CEFG，I为DG中点，连接CI；证明CI⊥BE且BE=2CI。",
+    "wordMethod": "倍长中线：延长IC到P，使IP=IC，连接PG，构造全等。",
+    "sourceConclusion": "CI⊥BE，BE=2CI。",
+    "sourceProof": [
+      "把CI延长一倍得到CP=2CI。",
+      "利用DG中点与旋转90°形成对应全等三角形。",
+      "由对应边及夹角得BE=CP且BE⊥CI。"
+    ],
+    "flags": [
+      "原文544..557有字母误写；优先使用523..541的正方形表述与配图。"
+    ],
+    "method": "brahma",
+    "sourceModel": "两个正方形共顶点C，方向按原图匹配。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型11 婆罗摩笈模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-m12",
+    "topic": 1,
+    "title": "模型12 脚蹬脚模型（海盗埋宝藏）",
+    "group": "基础模型",
+    "sourceRange": [
+      562,
+      598
+    ],
+    "conditions": "△ABC、△ADE为等腰直角三角形，∠B=∠D=90°，AB=CB，AD=ED；F为CE中点。",
+    "wordMethod": "倍长DF到G使FG=FD，先证△DEF≌△GCF，再构造手拉手。",
+    "sourceConclusion": "BF=DF，BF⊥DF。",
+    "sourceProof": [
+      "倍长中线转移边长，得到CG=ED=AD。",
+      "再证△BCG≌△BAD，得BG=BD且∠DBG=90°。",
+      "F为DG中点，等腰直角△BDG的斜边中线得到BF=DF且垂直。"
+    ],
+    "flags": [
+      "原文594写BF=DG=DF错误，应BF=DG/2=DF。方向必须与原图一致，不能任意翻转一个三角形后仍套结论。"
+    ],
+    "method": "treasure",
+    "sourceModel": "两个直角三角形的旋转方向按原图相反；F为CE中点。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 基础模型 / 模型12 脚蹬脚模型（海盗埋宝藏）",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t1-1",
+    "topic": 1,
+    "title": "模块一 题型1 手拉手模型",
+    "group": "模块一",
+    "sourceRange": [
+      618,
+      620
+    ],
+    "conditions": "巩固练习1第(1)问：△ABC、△ADE均为等边三角形，连接BD、CE，证明BD=CE。",
+    "wordMethod": "模型4的60°旋转全等。",
+    "sourceConclusion": "BD=CE。",
+    "sourceProof": [
+      "AB=AC，AD=AE，∠BAD=∠CAE。",
+      "SAS得△ABD≌△ACE。"
+    ],
+    "flags": [],
+    "method": "hand",
+    "sourceModel": "两个同向等边三角形共有顶点A。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块一 / 模块一 题型1 手拉手模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t1-2",
+    "topic": 1,
+    "title": "模块一 题型2 一线三等角模型",
+    "group": "模块一",
+    "sourceRange": [
+      651,
+      653
+    ],
+    "conditions": "例题1：E∈BC，BE=CD，∠B=∠AED=∠C；证∠EAD=∠EDA；当∠C=60°、DE=4求△AED面积。",
+    "wordMethod": "沿底线进行平角和内角和等角代换，证△ABE≌△ECD。",
+    "sourceConclusion": "AE=ED；60°时△AED等边，面积4√3。",
+    "sourceProof": [
+      "∠BAE+∠AEB=180°−∠B。",
+      "由E处平角和∠AED=∠B得∠CED=∠BAE。",
+      "AAS得△ABE≌△ECD，AE=ED；60°时三角形等边。"
+    ],
+    "flags": [],
+    "method": "three-perp",
+    "sourceModel": "B、E、C共线，∠ABE=∠AED=∠ECD，BE=CD。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块一 / 模块一 题型2 一线三等角模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t1-3",
+    "topic": 1,
+    "title": "模块一 题型3 平行线夹中点",
+    "group": "模块一",
+    "sourceRange": [
+      681,
+      682
+    ],
+    "conditions": "例题1：AB∥CD，∠BCD=60°，E为AD中点，AB=2，BC=6，CD=8，求BE。",
+    "wordMethod": "延长BE交CD于F，AAS全等把AB搬到DF。",
+    "sourceConclusion": "BE=3。",
+    "sourceProof": [
+      "延长BE交CD于F。△ABE≌△DFE，故BE=EF，DF=AB=2。",
+      "核原图可知F在CD内部，所以CF=CD−DF=6。",
+      "BC=CF=6，夹角∠BCF=60°，△BCF等边，BF=6。于是BE=3。"
+    ],
+    "flags": [
+      "已核682原图，F在CD内部，不能取CF=10；结论BE=3。"
+    ],
+    "method": "parallel-midpoint",
+    "sourceModel": "AB∥CD，AE=DE。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块一 / 模块一 题型3 平行线夹中点",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t1-4",
+    "topic": 1,
+    "title": "模块一 题型4 构造一线三垂直",
+    "group": "模块一",
+    "sourceRange": [
+      737,
+      740
+    ],
+    "conditions": "巩固练习6第(1)问：△ABC中∠A=90°，BC绕B顺时针90°到BD，作DE⊥AB于E，观察AB与DE。",
+    "wordMethod": "一线三垂直：旋转斜边，互余角构造全等。",
+    "sourceConclusion": "AB=DE；AC=BE（依图取有向位置）。",
+    "sourceProof": [
+      "旋转90°，两锐角经互余得到相等。",
+      "公共旋转长度作为两直角三角形的斜边，得到全等。"
+    ],
+    "flags": [],
+    "method": "three-perp",
+    "sourceModel": "∠A=∠BED=90°，BC=BD。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块一 / 模块一 题型4 构造一线三垂直",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t1-5",
+    "topic": 1,
+    "title": "模块一 题型5 倍长中线法",
+    "group": "模块一",
+    "sourceRange": [
+      748,
+      750
+    ],
+    "conditions": "例题第(1)问：AB=8，AC=4，求BC边中线AD的范围。",
+    "wordMethod": "Word明示延长AD到E使DE=AD，把AB、AC、2AD集中到△ABE。",
+    "sourceConclusion": "2<AD<6。",
+    "sourceProof": [
+      "倍长得BE=AC=4，AE=2AD。",
+      "△ABE三边关系4<2AD<12。"
+    ],
+    "flags": [],
+    "method": "median",
+    "sourceModel": "两边8和4；三角形不退化。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块一 / 模块一 题型5 倍长中线法",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。",
+    "originalLink": "median"
+  },
+  {
+    "id": "t1-t1-6",
+    "topic": 1,
+    "title": "模块一 题型6 截长补短法",
+    "group": "模块一",
+    "sourceRange": [
+      816,
+      820
+    ],
+    "conditions": "例题3第(1)问：Rt△ABC，∠C=90°，∠A=30°；D∈BC，AD绕A顺时针60°到AE；EF∥BC交AB于F；证BD+EF=AB。",
+    "wordMethod": "原文819明确在AB上截取AM=EF，连接DM，构造全等。",
+    "sourceConclusion": "BD+EF=AB。",
+    "sourceProof": [
+      "AD=AE，利用30°与平行线导出对应夹角。",
+      "在AB取AM=EF，证△ADM与△AEF全等。",
+      "得DM=AF并通过等腰关系将剩余MB对应BD，最终AB=AM+MB=EF+BD。"
+    ],
+    "flags": [],
+    "method": "cut-short",
+    "sourceModel": "D在BC线段，旋转方向按原图。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块一 / 模块一 题型6 截长补短法",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t2-1",
+    "topic": 1,
+    "title": "模块二 题型1 角平分线+垂一边",
+    "group": "模块二",
+    "sourceRange": [
+      860,
+      861
+    ],
+    "conditions": "巩固练习1：Rt△ABC，∠C=90°，尺规构造B角平分线交AC于F，CF=3、AF=5，求BF。",
+    "wordMethod": "向AB补垂线，角平分线等距，直角三角形全等。",
+    "sourceConclusion": "BF=3√5。",
+    "sourceProof": [
+      "设BC=x，AB=√(x²+64)。",
+      "面积或角平分线定理给AB/BC=AF/CF=5/3，解BC=6。",
+      "BF=√(6²+3²)=3√5。"
+    ],
+    "flags": [],
+    "method": "bisector",
+    "sourceModel": "AC=8，F∈AC，BF为B角平分线。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块二 / 模块二 题型1 角平分线+垂一边",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t2-2",
+    "topic": 1,
+    "title": "模块二 题型2 作角平分线的垂线",
+    "group": "模块二",
+    "sourceRange": [
+      871,
+      872
+    ],
+    "conditions": "例题1：等腰Rt△ABC，∠BAC=90°、AB=AC，BD平分∠ABC，过C作CE⊥BD交其延长线于E；CE=5/3，求BD。",
+    "wordMethod": "角平分线的垂线构造对称等腰三角形；以反射或全等转移长度。",
+    "sourceConclusion": "BD=2CE=10/3。",
+    "sourceProof": [
+      "将C关于BD反射到BA射线，CE成为反射连线一半。",
+      "结合∠A=90°与AB=AC，导角得到倍长关系BD=2CE。",
+      "等价三角检验：BD/BC=sin45°/sin67.5°，CE/BC=sin22.5°，比值为2。"
+    ],
+    "flags": [
+      "已核WMF与原图；纯几何导角步骤应细化，不能把三角检验伪称Word原解。"
+    ],
+    "method": "bisector-normal",
+    "sourceModel": "∠ABC=45°，BD使22.5°；CE垂直角平分线。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块二 / 模块二 题型2 作角平分线的垂线",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t2-3",
+    "topic": 1,
+    "title": "模块二 题型3 角平分线的截长补短",
+    "group": "模块二",
+    "sourceRange": [
+      884,
+      888
+    ],
+    "conditions": "例题2第(2)问：△AMC，AD平分∠MAC，D∈MC。选择∠AMD=2∠C为已知，证明AC=AM+MD。",
+    "wordMethod": "在长边AC截取AN=AM，连接DN，构造SAS全等；与模型8同构。",
+    "sourceConclusion": "AC=AM+MD。",
+    "sourceProof": [
+      "AN=AM，AD公共，角平分得△AND≌△AMD，DN=DM。",
+      "导角得∠NDC=∠C，故NC=ND。",
+      "AC=AN+NC=AM+MD。"
+    ],
+    "flags": [],
+    "method": "cut-short",
+    "sourceModel": "∠M=2∠C；AD角平分线。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块二 / 模块二 题型3 角平分线的截长补短",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t2-4",
+    "topic": 1,
+    "title": "模块二 题型4 角平分线+平行线得等腰",
+    "group": "模块二",
+    "sourceRange": [
+      912,
+      914
+    ],
+    "conditions": "例题1：∠AOE=15°，OE平分∠AOB，DE∥OB交OA于D，EC⊥OB于C；EC=2，求OD。",
+    "wordMethod": "平行线给内错角，角平分给等角，构造等腰。",
+    "sourceConclusion": "OD=DE=4。",
+    "sourceProof": [
+      "∠DOE=∠EOB=∠OED，所以OD=DE。",
+      "∠AOB=30°，D到OB的距离等于E到OB的距离2。",
+      "OD·sin30°=2，故OD=4。"
+    ],
+    "flags": [],
+    "method": "bisector-parallel",
+    "sourceModel": "OE角平分线；DE∥OB。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块二 / 模块二 题型4 角平分线+平行线得等腰",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t2-5",
+    "topic": 1,
+    "title": "模块二 题型5 角平分线分线段成比例",
+    "group": "模块二",
+    "sourceRange": [
+      933,
+      936
+    ],
+    "conditions": "选取例题第（1）问：AD平分∠BAC，P在AD上，PM⊥AB、PN⊥AC。证明PM=PN。",
+    "wordMethod": "从角平分线上的点向两边作垂线，构造直角三角形并证明全等。",
+    "sourceConclusion": "PM=PN。",
+    "sourceProof": [
+      "D到AB、AC距离相等，所以SABD/SACD=AB/AC。",
+      "两三角形到BC有同一高，所以面积比=BD/DC。"
+    ],
+    "flags": [
+      "原文935待求比值为WMF，若未恢复，可明确仅取933的等距小问，分比作为本章方法推广。"
+    ],
+    "method": "bisector",
+    "sourceModel": "D∈BC，AD角平分线。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块二 / 模块二 题型5 角平分线分线段成比例",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t3-1",
+    "topic": 1,
+    "title": "模块三 题型1 半角模型",
+    "group": "模块三",
+    "sourceRange": [
+      984,
+      990
+    ],
+    "conditions": "巩固练习2：正方形折叠使AB、AD落在AC，折痕构成45°角；转动该角使两边交BC、CD于P、Q，求BP、PQ、DQ关系。",
+    "wordMethod": "旋转补等长线段，拼接成一条线段后SAS。",
+    "sourceConclusion": "PQ=BP+DQ。",
+    "sourceProof": [
+      "在CB延长线上取G使BG=DQ。",
+      "△ABG≌△ADQ，再△APG≌△APQ。",
+      "PQ=PG=PB+BG=PB+DQ。"
+    ],
+    "flags": [],
+    "method": "half-angle",
+    "sourceModel": "正方形，∠PAQ=45°，P∈BC,Q∈CD。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块三 / 模块三 题型1 半角模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t3-2",
+    "topic": 1,
+    "title": "模块三 题型2 邻边相等+对角互补",
+    "group": "模块三",
+    "sourceRange": [
+      1013,
+      1014
+    ],
+    "conditions": "例题1：∠ECF=α，∠B+∠D=180°，CB=CD，且BE+DF=EF，求∠BCD。",
+    "wordMethod": "将短边旋转补到长边，先SAS后SSS，反向识别半角。",
+    "sourceConclusion": "∠BCD=2α（图示分支）。",
+    "sourceProof": [
+      "补BG=DF构造与△CDF全等的三角形。",
+      "由GE=BE+DF=EF及对应边相等，得△CGE≌△CFE。",
+      "E射线平分展开后的顶角，故原顶角等于2α。"
+    ],
+    "flags": [
+      "原文1014嵌图疑似图错配（与题目字母不完全一致），不能把正方形特例声称完整原题动态。"
+    ],
+    "method": "half-angle",
+    "sourceModel": "四边形中E∈AB,F∈AD，CB=CD；对角互补。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块三 / 模块三 题型2 邻边相等+对角互补",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t3-3",
+    "topic": 1,
+    "title": "模块三 题型3 鸡爪模型",
+    "group": "模块三",
+    "sourceRange": [
+      1021,
+      1023
+    ],
+    "conditions": "例题1：O为等边△ABC内点，OA=2，OB=1，OC=√3，求S△AOB+S△BOC。",
+    "wordMethod": "旋转60°，把三条距离组成1、√3、2的直角三角形，再转移面积。",
+    "sourceConclusion": "S△AOB+S△BOC=3√3/4。",
+    "sourceProof": [
+      "将O绕B顺时针60°至O′，A同时转到C，故△BAO≌△BCO′，CO′=AO=2。",
+      "BO=BO′=OO′=1，△BOO′等边；又OC=√3，所以OO′²+OC²=O′C²，△OO′C在O处直角。",
+      "原两三角形面积之和经旋转等于四边形BOCO′面积，即S△BOO′+S△OO′C=√3/4+√3/2=3√3/4。"
+    ],
+    "flags": [
+      "已从WMF恢复OC=√3，独立坐标与旋转面积分解核验选项C=3√3/4。"
+    ],
+    "method": "chicken",
+    "sourceModel": "等边三角形内点；三距离为2、1、√3。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块三 / 模块三 题型3 鸡爪模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t4-1",
+    "topic": 1,
+    "title": "模块四 题型1 作平行线",
+    "group": "模块四",
+    "sourceRange": [
+      1032,
+      1038
+    ],
+    "conditions": "例题2阅读材料：AB、CD相交于O，O为AB中点，AC∥BD，证O为CD中点。",
+    "wordMethod": "Word明确构造平行八字全等三角形模型。",
+    "sourceConclusion": "OC=OD。",
+    "sourceProof": [
+      "平行线内错角相等，对顶角相等。",
+      "AAS得△AOC≌△BOD。"
+    ],
+    "flags": [],
+    "method": "parallel-midpoint",
+    "sourceModel": "OA=OB，AC∥BD，A/O/B和C/O/D分别共线。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块四 / 模块四 题型1 作平行线",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t4-2",
+    "topic": 1,
+    "title": "模块四 题型2 以手拉手模型为背景的综合题",
+    "group": "模块四",
+    "sourceRange": [
+      1113,
+      1115
+    ],
+    "conditions": "巩固练习3第(1)问：等边ABC内点D，AD绕A逆时针60°到AE，连接BD、DE、CE；判断并证明BD与CE关系。",
+    "wordMethod": "60°旋转同向等角，SAS全等。",
+    "sourceConclusion": "BD=CE。",
+    "sourceProof": [
+      "AB=AC，AD=AE，∠BAD=∠CAE。",
+      "SAS得△ABD≌△ACE。"
+    ],
+    "flags": [],
+    "method": "chicken",
+    "sourceModel": "等边ABC，D内部，E=R60D。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块四 / 模块四 题型2 以手拉手模型为背景的综合题",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t4-3",
+    "topic": 1,
+    "title": "模块四 题型3 婆罗摩及多模型",
+    "group": "模块四",
+    "sourceRange": [
+      1163,
+      1167
+    ],
+    "conditions": "巩固练习2选结论②：在△ABC两边外作等腰直角△ABE、△ACD，AB=AE,AC=AD,∠BAE=∠CAD=90°；AM为BC中线，证明ED=2AM。",
+    "wordMethod": "倍长中线得到平行四边形，再90°旋转全等。",
+    "sourceConclusion": "ED=2AM，且ED⊥AM。",
+    "sourceProof": [
+      "延长AM到P使MP=AM，得BP=AC且BP∥AC。",
+      "将AP与ED用90°旋转对应，证明长度相等。",
+      "AP=2AM，故ED=2AM。"
+    ],
+    "flags": [],
+    "method": "brahma",
+    "sourceModel": "两侧向外作直角等腰三角形，M为BC中点。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块四 / 模块四 题型3 婆罗摩及多模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t4-4",
+    "topic": 1,
+    "title": "模块四 题型4 脚蹬脚",
+    "group": "模块四",
+    "sourceRange": [
+      1185,
+      1187
+    ],
+    "conditions": "例题1：正方形ABCD、CEFG，M为AF中点，连接DM、EM；讨论DM、EM的数量与位置关系。",
+    "wordMethod": "模型12倍长中线，再由两个正方形的90°旋转构造全等。",
+    "sourceConclusion": "DM=EM，DM⊥EM。",
+    "sourceProof": [
+      "从M倍长一条中线，把AF中点条件转为全等。",
+      "正方形的等边与90°夹角构造另一组全等。",
+      "得等腰直角三角形，回到DM与EM。"
+    ],
+    "flags": [],
+    "method": "treasure",
+    "sourceModel": "两正方形共享C；E在CD或DC延长线上，方向匹配原图。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块四 / 模块四 题型4 脚蹬脚",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t1-t4-5",
+    "topic": 1,
+    "title": "模块四 题型5 绝配角模型",
+    "group": "模块四",
+    "sourceRange": [
+      1219,
+      1220
+    ],
+    "conditions": "巩固练习1：Rt△ABC，∠BAC=90°，AB=3，AC=4，D∈AC，∠ABD=∠C，求AD。",
+    "wordMethod": "等角构造相似或通过补等腰三角形做角度转换；此章练习允许相似。",
+    "sourceConclusion": "AD=9/4。",
+    "sourceProof": [
+      "∠BAD=∠CAB=90°，∠ABD=∠ACB。",
+      "△ABD∽△ACB，因此AD/AB=AB/AC。",
+      "AD=AB²/AC=9/4。"
+    ],
+    "flags": [
+      "选择本章巩固练习1而非例题1，条件完整可核，使用文档出现的等角与相似方法；不要声称这是模型10的同一角条件。"
+    ],
+    "method": "matching-angle",
+    "sourceModel": "AB=3，AC=4，BD与BA夹角等于∠C。",
+    "topicName": "全等三角形模型综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题01 / 模块四 / 模块四 题型5 绝配角模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m1",
+    "topic": 2,
+    "title": "A字模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1228,
+      1235
+    ],
+    "conditions": "D∈AB,E∈AC,DE∥BC",
+    "wordMethod": "平行线导出对应角相等，AA相似",
+    "sourceConclusion": "AD/AB=AE/AC=DE/BC=t",
+    "sourceProof": [],
+    "flags": [],
+    "method": "similar-a",
+    "sourceModel": "A=(0,6),B=(-4,0),C=(5,0)，D=A+t(B-A),E=A+t(C-A),t∈[.15,.85]",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / A字模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m2",
+    "topic": 2,
+    "title": "8字模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1247,
+      1271
+    ],
+    "conditions": "AC与BD交于O，AB∥CD",
+    "wordMethod": "对顶角+平行线对应角，AA相似",
+    "sourceConclusion": "OA/OC=OB/OD=AB/CD=1/t",
+    "sourceProof": [],
+    "flags": [],
+    "method": "similar-eight",
+    "sourceModel": "O=(0,0),A=(-3,2),B=(4,2),C=-tA,D=-tB，t可变",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 8字模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m3",
+    "topic": 2,
+    "title": "反8字模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1293,
+      1297
+    ],
+    "conditions": "AC、BD交O，∠A=∠D",
+    "wordMethod": "第一组AA相似，交换比例中项得到第二组SAS相似；四点共圆",
+    "sourceConclusion": "△AOB∽△DOC；△AOD∽△BOC",
+    "sourceProof": [],
+    "flags": [],
+    "method": "reverse-eight",
+    "sourceModel": "在同圆上依次A,B,C,D，连接AC、BD与AD、BC，拖圆上D保持次序",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 反8字模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m4",
+    "topic": 2,
+    "title": "三角形内接矩形型",
+    "group": "基础模型",
+    "sourceRange": [
+      1298,
+      1306
+    ],
+    "conditions": "DEFG为三角形内接矩形",
+    "wordMethod": "矩形上边平行底边；相似比化宽高关系",
+    "sourceConclusion": "w=b(1-x/h)；正方形边bh/(b+h)；最大面积bh/4",
+    "sourceProof": [],
+    "flags": [],
+    "method": "rectangle",
+    "sourceModel": "复用rectangle，底b、高h、矩形高x",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 三角形内接矩形型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m5",
+    "topic": 2,
+    "title": "倒数模型（三平行结构）",
+    "group": "基础模型",
+    "sourceRange": [
+      1307,
+      1317
+    ],
+    "conditions": "AB∥EF∥CD，AC与BD交E，F∈BC",
+    "wordMethod": "两组A字相似，EF/AB+EF/CD=1",
+    "sourceConclusion": "1/EF=1/AB+1/CD",
+    "sourceProof": [],
+    "flags": [],
+    "method": "reciprocal",
+    "sourceModel": "B=(0,0),C=(8,0),A=(0,a),D=(8,b)，E=AC∩BD，F=(E.x,0)",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 倒数模型（三平行结构）",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m6",
+    "topic": 2,
+    "title": "射影定理模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1318,
+      1323
+    ],
+    "conditions": "∠ACB=90°，CD⊥AB",
+    "wordMethod": "三个直角三角形AA相似",
+    "sourceConclusion": "CA²=AD·AB；CB²=DB·AB；CD²=AD·DB",
+    "sourceProof": [],
+    "flags": [],
+    "method": "projection",
+    "sourceModel": "A=(0,0),B=(10,0),D=(t,0),C=(t,sqrt(t*(10-t))),t∈(0,10)",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 射影定理模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m7",
+    "topic": 2,
+    "title": "母子相似模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1324,
+      1345
+    ],
+    "conditions": "D∈AB，∠ACD=∠ABC",
+    "wordMethod": "共角+已知等角，AA相似",
+    "sourceConclusion": "AC²=AD·AB",
+    "sourceProof": [],
+    "flags": [],
+    "method": "mother",
+    "sourceModel": "A=(0,0),B=(8,0),C=5(cosθ,sinθ),D=(25/8,0)，θ可变",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 母子相似模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m8",
+    "topic": 2,
+    "title": "一线三等角模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1346,
+      1396
+    ],
+    "conditions": "P∈AB，三个相等角",
+    "wordMethod": "利用三角形内角和/平角转化出另一组等角",
+    "sourceConclusion": "△CAP∽△PBD；CA/PB=AP/BD",
+    "sourceProof": [],
+    "flags": [],
+    "method": "three-perp-similar",
+    "sourceModel": "取90°特例：A=(0,0),P=(p,0),B=(8,0),C=(0,c),D=(8,p*(8-p)/c)",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 一线三等角模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m9",
+    "topic": 2,
+    "title": "旋转相似模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1398,
+      1431
+    ],
+    "conditions": "DE∥BC，将△ADE绕A旋转",
+    "wordMethod": "先由平行得相似比例，再由旋转保角得SAS相似",
+    "sourceConclusion": "△ABD∽△ACE；BD/CE=AB/AC=4/5",
+    "sourceProof": [],
+    "flags": [],
+    "method": "similar-hand",
+    "sourceModel": "A=(0,0),B=(8,0),C=(8,6),D=Rθ(kB),E=Rθ(kC)",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 旋转相似模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m10",
+    "topic": 2,
+    "title": "十字架模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1437,
+      1444
+    ],
+    "conditions": "矩形ABCD，CE⊥BD，E在AD上",
+    "wordMethod": "作平行/垂直辅助线补直角三角形，AA相似",
+    "sourceConclusion": "CE/BD=m/n",
+    "sourceProof": [],
+    "flags": [],
+    "method": "cross",
+    "sourceModel": "A=(0,m),B=(0,0),C=(n,0),D=(n,m),E=(n-m²/n,m)，0<m<n",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 十字架模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m11",
+    "topic": 2,
+    "title": "对角互补模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1453,
+      1455
+    ],
+    "conditions": "O为两垂直射线顶点，D∈OA,E∈OB，∠DCE=90°。原图是四边形ODCE两个对角互补。",
+    "wordMethod": "从C向两射线作垂线CF、CG，把互补角转为两直角三角形相似",
+    "sourceConclusion": "△FDC∽△GCE；需保持原图同侧位置避免有向线段变化",
+    "sourceProof": [],
+    "flags": [],
+    "method": "supplement",
+    "sourceModel": "O=(0,0),D=(0,d),E=(e,0)，C在以DE为直径圆弧上；F=(0,C.y),G=(C.x,0)",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 对角互补模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-m12",
+    "topic": 2,
+    "title": "双高模型",
+    "group": "基础模型",
+    "sourceRange": [
+      1456,
+      1470
+    ],
+    "conditions": "△BNC中，CO⊥BN，BF⊥CN，交M",
+    "wordMethod": "两直角加公共角及互余角，组成多组相似",
+    "sourceConclusion": "△BOM∽△BFN∽△CFM∽△CON；△BCM∽△OFM；△NOF∽△NCB",
+    "sourceProof": [],
+    "flags": [],
+    "method": "double-height",
+    "sourceModel": "B=(0,0),C=(8,0),N=(u,v)保持锐角；投影得O,F；交线得M",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 基础模型 / 双高模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q1",
+    "topic": 2,
+    "title": "A字模型",
+    "group": "题型训练",
+    "sourceRange": [
+      1472,
+      1473
+    ],
+    "conditions": "BF=.7m,BC=1.4m,FD=.7m,DE=2.1m；OA灯高；A,B,D共线，A,C,E共线",
+    "wordMethod": "窗边与灯柱平行，两次A字相似",
+    "sourceConclusion": "由h=.7(x+.7)/.7=2.1(x+2.8)/2.8，x=5.6,h=6.3m",
+    "sourceProof": [],
+    "flags": [],
+    "method": "similar-a",
+    "sourceModel": "可调灯高/距离构造投影，原题快照固定数值。令OF=x，OD=x+.7，OE=x+2.8",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / A字模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q2",
+    "topic": 2,
+    "title": "8字型",
+    "group": "题型训练",
+    "sourceRange": [
+      1494,
+      1495
+    ],
+    "conditions": "平行四边形ABCD，E∈AB，AC与DE交F，AE/EB=2/3，求S_ADF/S_AEF",
+    "wordMethod": "△AFE∽△CFD，DF/EF=CD/AE；同高面积比",
+    "sourceConclusion": "DF/EF=5/2，所以面积比5/2",
+    "sourceProof": [],
+    "flags": [],
+    "method": "similar-eight",
+    "sourceModel": "A=(0,0),B=(5,0),D=(u,v),C=B+D,E=(2,0)，拖D",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 8字型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q3",
+    "topic": 2,
+    "title": "三角形内接矩形",
+    "group": "题型训练",
+    "sourceRange": [
+      1525,
+      1528
+    ],
+    "conditions": "BC=10,AH=8,EF=x",
+    "wordMethod": "上部三角形相似；代数配方",
+    "sourceConclusion": "正方形40/9；S=10x−5x²/4，最大20",
+    "sourceProof": [],
+    "flags": [],
+    "method": "rectangle",
+    "sourceModel": "复用rectangle全部",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 三角形内接矩形",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。",
+    "originalLink": "rectangle"
+  },
+  {
+    "id": "t2-q4",
+    "topic": 2,
+    "title": "倒数型",
+    "group": "题型训练",
+    "sourceRange": [
+      1530,
+      1532
+    ],
+    "conditions": "D,E为AB三等分点，F,G∈BC，AC∥DG∥EF，H=AF∩DG，AC=12，求DH",
+    "wordMethod": "先平行相似EF=AC/3=4，再△ADH∽△AEF",
+    "sourceConclusion": "DH=(AD/AE)EF=2",
+    "sourceProof": [],
+    "flags": [],
+    "method": "reciprocal",
+    "sourceModel": "A=(0,0),B=(9,0),C=12(cosθ,sinθ),D=(3,0),E=(6,0)，F=B+(C-B)/3，H=AF∩(D+线AC)",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 倒数型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q5",
+    "topic": 2,
+    "title": "A字与8字相综合",
+    "group": "题型训练",
+    "sourceRange": [
+      1540,
+      1542
+    ],
+    "conditions": "DE为△ABC中位线，F∈DB，DF=2BF，EF延长交CB延长线M，BC=6",
+    "wordMethod": "DE=BC/2；△DFE∽△BFM，得到MB",
+    "sourceConclusion": "DE=3，MB=3/2，CM=15/2",
+    "sourceProof": [],
+    "flags": [],
+    "method": "similar-eight",
+    "sourceModel": "B=(0,0),C=(6,0),A=(u,v),D=A/2,E=(A+C)/2,F=D/3",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / A字与8字相综合",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q6",
+    "topic": 2,
+    "title": "射影定理",
+    "group": "题型训练",
+    "sourceRange": [
+      1560,
+      1563
+    ],
+    "conditions": "Rt△ABC,∠BAC90°,AD⊥BC；AB6,BC10",
+    "wordMethod": "△ABD∽△CBA，共角及直角",
+    "sourceConclusion": "BD=AB²/BC=18/5",
+    "sourceProof": [],
+    "flags": [],
+    "method": "projection",
+    "sourceModel": "B=(0,0),C=(10,0),A=(t,sqrt(t*(10-t))),D=(t,0)，原题t3.6",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 射影定理",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q7",
+    "topic": 2,
+    "title": "子母相似",
+    "group": "题型训练",
+    "sourceRange": [
+      1603,
+      1605
+    ],
+    "conditions": "AD中线；E在AC延长线，∠E=∠ABC；AC=CE,BC6，AD延长交BE于F",
+    "wordMethod": "共角得到△ABC∽△AEB，再利用中线/平行比",
+    "sourceConclusion": "△ABC∽△AEB；AC·AE=AB²；AC=CE时BE=6√2，BF:FE=1:2（中线与倍长边），EF=4√2",
+    "sourceProof": [],
+    "flags": [],
+    "method": "mother",
+    "sourceModel": "以母子相似核心动态展示共角及公共边乘积，原题拓展须保留快照",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 子母相似",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q8",
+    "topic": 2,
+    "title": "一线三等角",
+    "group": "题型训练",
+    "sourceRange": [
+      1719,
+      1732
+    ],
+    "conditions": "等边△ABC折叠B到AC上F，AF4,CF8，折痕DE，求CE",
+    "wordMethod": "折叠得EB=EF；等边角60°结合直角/勾股或一线三等角",
+    "sourceConclusion": "设CE=x，EB=12−x；EF²=x²−8x+64；得x=5，即CE5",
+    "sourceProof": [],
+    "flags": [],
+    "method": "three-perp-similar",
+    "sourceModel": "A=(0,6sqrt3),B=(-6,0),C=(6,0),F=C+(A-C)*2/3，折痕为BF垂直平分线，交BC为E",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 一线三等角",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q9",
+    "topic": 2,
+    "title": "旋转相似",
+    "group": "题型训练",
+    "sourceRange": [
+      1761,
+      1762
+    ],
+    "conditions": "Rt△ABC,∠ABC90°,AB8,BC6,AD2，DE∥BC，旋转△ADE绕A；求BD/CE",
+    "wordMethod": "两边比例及旋转等角SAS相似",
+    "sourceConclusion": "BD/CE=AB/AC=4/5",
+    "sourceProof": [],
+    "flags": [],
+    "method": "similar-hand",
+    "sourceModel": "A=(0,0),B=(8,0),C=(8,−6),D=Rθ(2,0),E=Rθ(2,−1.5)",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 旋转相似",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q10",
+    "topic": 2,
+    "title": "作辅助线构造A字8字",
+    "group": "题型训练",
+    "sourceRange": [
+      1859,
+      1860
+    ],
+    "conditions": "菱形边10；O为AC、BD交点；E在BC延长，OE交CD于F；∠ACD=2∠OEC；OF/FE=5/6",
+    "wordMethod": "过O作BC平行线（交CD）或延长AD交OE构造A/8相似",
+    "sourceConclusion": "菱形面积96。过O平行BC或相似得CE6；设B0,C10,A=(a,h)，菱形边10，角条件给a=14/5,h=48/5，面积10h96。",
+    "sourceProof": [],
+    "flags": [
+      "数值解为独立核验，不是Word逐字解答；课件方法应先演示平行线相似"
+    ],
+    "method": "similar-a",
+    "sourceModel": "核心演示过中点作平行、相似将OF/FE转化边比；原题角约束不可省略",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 作辅助线构造A字8字",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q11",
+    "topic": 2,
+    "title": "反8字相似",
+    "group": "题型训练",
+    "sourceRange": [
+      1885,
+      1887
+    ],
+    "conditions": "AD∥BC,∠C45°；AB为腰作等腰直角△BAE，∠BAE90°，E∈CD，AD1，求CE",
+    "wordMethod": "利用等角构造反8或作垂线把45°转为等腰直角",
+    "sourceConclusion": "CE=√2（可用坐标：E=(h,h+b),C=(2h+b,0),D须E.x+E.y−h=1→h+b=1，CE=√2）",
+    "sourceProof": [],
+    "flags": [],
+    "method": "reverse-eight",
+    "sourceModel": "A=(0,h),D=(1,h),B=(b,0),E=A+R90(B-A)，令C在y0且EC斜率−1；选择一致方向",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 反8字相似",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q12",
+    "topic": 2,
+    "title": "十字架模型",
+    "group": "题型训练",
+    "sourceRange": [
+      1896,
+      1897
+    ],
+    "conditions": "正方形ABCD，AB12,E∈BC,F∈CD，BE=CF5，G=AE∩BF，求BG",
+    "wordMethod": "由全等得AE⊥BF，再用△BGE∽△BCF",
+    "sourceConclusion": "BF13，BG=BE·BC/BF=60/13",
+    "sourceProof": [],
+    "flags": [],
+    "method": "cross",
+    "sourceModel": "B=(0,0),C=(12,0),A=(0,12),D=(12,12),E=(t,0),F=(12,t)，原题t5",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 十字架模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q13",
+    "topic": 2,
+    "title": "对角互补模型",
+    "group": "题型训练",
+    "sourceRange": [
+      1947,
+      1955
+    ],
+    "conditions": "Rt△ABC，∠BAC90°,AB2,AC4,D∈BC，DE⊥DF交AB、AC于E、F；先D中点，再CD/BD=a/b",
+    "wordMethod": "过D作两边垂线，转角互补得到相似比例",
+    "sourceConclusion": "DE/DF=(AC/AB)*(BD/CD)=2b/a；D中点时DE/DF=2。",
+    "sourceProof": [],
+    "flags": [
+      "已校正研究初稿误倒比例；请使用本值"
+    ],
+    "method": "supplement",
+    "sourceModel": "A=(0,0),B=(2,0),C=(0,4),D=B+t(C-B)，过D旋转互相垂直两射线求E,F；限制交点在边上",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 对角互补模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q14",
+    "topic": 2,
+    "title": "双高模型",
+    "group": "题型训练",
+    "sourceRange": [
+      1961,
+      1962
+    ],
+    "conditions": "锐角△ABC，AD⊥BC，CE⊥AB，S_ABC18,S_BDE2,DE2，求AC上高",
+    "wordMethod": "△BDE∽△BAC，面积比开方为边比",
+    "sourceConclusion": "相似比1/3，AC6，高=2*18/6=6",
+    "sourceProof": [],
+    "flags": [],
+    "method": "double-height",
+    "sourceModel": "拖锐角三角形顶点，构造两个垂足D,E；比较DE/AC与面积比平方根",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 双高模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q15",
+    "topic": 2,
+    "title": "折叠与相似综合",
+    "group": "题型训练",
+    "sourceRange": [
+      1973,
+      1974
+    ],
+    "conditions": "正方形ABCD，E∈CD，∠CBE30°；△BCE沿BE折成△BC′E；C′E与BD交F，求DF/BF",
+    "wordMethod": "折叠保长保角；与正方形45°角配合成相似",
+    "sourceConclusion": "DF/BF=(√3−1)/2。取边长1，E=(1−1/√3,1)，反射C得C′=(1−√3/2,1/2)，交BD得F=(2−√3,√3−1)，长度比=(1−F.y)/F.y。",
+    "sourceProof": [],
+    "flags": [
+      "坐标用于独立数值核验；课堂步骤使用折叠等角和AA相似"
+    ],
+    "method": "fold",
+    "sourceModel": "A=(0,0),B=(1,0),C=(1,1),D=(0,1),E=(1−tanθ,1)，反射C过BE得C′，F=C′E∩BD，原题θ30°",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 折叠与相似综合",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q16",
+    "topic": 2,
+    "title": "结合条件构造相似",
+    "group": "题型训练",
+    "sourceRange": [
+      2006,
+      2007
+    ],
+    "conditions": "Rt△ABC，∠C90°，AD角平分线，E为AD中点，BE=BC,CD2，求BD",
+    "wordMethod": "倍长/作平行形成相似，角平分线与等腰条件综合",
+    "sourceConclusion": "BD=(1+√17)/2。设BC=b，CD2，AC=a；BE=BC与中点得a²=8b−4；角平分线比2/(b−2)=a/√(a²+b²)，得b=(5+√17)/2。",
+    "sourceProof": [],
+    "flags": [
+      "课堂用辅助平行线引出角平分线比例；数值核验不可误用D中点"
+    ],
+    "method": "angle-ratio",
+    "sourceModel": "核心可作过E平行AB或AC构造中位线，将中点转比例；保留原题静态给定",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 结合条件构造相似",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t2-q17",
+    "topic": 2,
+    "title": "相似探究性问题",
+    "group": "题型训练",
+    "sourceRange": [
+      2025,
+      2033
+    ],
+    "conditions": "D∈AB，∠ACD=∠B，证AC²=AD·AB；D中点、BC4求CD",
+    "wordMethod": "母子相似AA；对应比例",
+    "sourceConclusion": "第1问乘积定理；第2问相似比1/√2，CD=BC/√2=2√2",
+    "sourceProof": [],
+    "flags": [],
+    "method": "mother",
+    "sourceModel": "A=(0,0),B=(8,0),C=(c cosθ,c sinθ),D=(c²/8,0)；第2问令c=4√2并缩放BC到4",
+    "topicName": "相似三角形综合",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题02 / 题型训练 / 相似探究性问题",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q1",
+    "topic": 3,
+    "title": "圆中勾股求长",
+    "group": "题型训练",
+    "sourceRange": [
+      2147,
+      2149
+    ],
+    "conditions": "△ABD内接圆,AB=BD；BE切线；AC直径；DC延长交BE于E；AB5√6,BE5",
+    "wordMethod": "连OB，利用切线垂直半径、等弦对应等圆周角以及勾股",
+    "sourceConclusion": "DE⊥BE；半径r=3√5。取B=(r,0)，A=(r cosθ,r sinθ)，D=(r cosθ,−r sinθ)，切线BE竖直而DC水平。BE²=r²sin²θ=25；AB²=2r²(1−cosθ)=150→r²45。",
+    "sourceProof": [],
+    "flags": [],
+    "method": "chord",
+    "sourceModel": "圆上选A,C对径；B可动；D为A关于OB的镜像。E=DC∩B点切线，测DE⊥BE；θ限110°～160°避免C=D退化，原题r=3√5、cosθ=−2/3。",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆中勾股求长",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q2",
+    "topic": 3,
+    "title": "圆中阴影面积",
+    "group": "题型训练",
+    "sourceRange": [
+      2171,
+      2173
+    ],
+    "conditions": "两个半圆半径2，一个端点重合另一圆心",
+    "wordMethod": "连两圆心与交点，两个60°扇形相加减公共等边三角形",
+    "sourceConclusion": "4π/3−√3",
+    "sourceProof": [],
+    "flags": [],
+    "method": "semicircle",
+    "sourceModel": "复用semicircle",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆中阴影面积",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。",
+    "originalLink": "semicircle"
+  },
+  {
+    "id": "t3-q3",
+    "topic": 3,
+    "title": "圆与三角函数",
+    "group": "题型训练",
+    "sourceRange": [
+      2197,
+      2199
+    ],
+    "conditions": "AB、CD直径，E在劣弧BD，G在BD延长，AB=AG，∠EAD+∠EDB45°；BG4√5,sinDAE1/3",
+    "wordMethod": "同弧圆周角转成DAB45°，直径得ADB90°；AB=AG得切线，再三角比求弦",
+    "sourceConclusion": "AG切圆；AB=BG/√2=2√10；DE=AB sinDAE=2√10/3",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-trig",
+    "sourceModel": "核心演示直径直角与sin圆周角=弦/直径；原题约束保留快照",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆与三角函数",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q4",
+    "topic": 3,
+    "title": "圆中截长补短",
+    "group": "题型训练",
+    "sourceRange": [
+      2224,
+      2232
+    ],
+    "conditions": "CA=CB,圆外接△ABC,D在圆上AD>BD；∠ACB60°，C,D在AB同侧，比较AD−BD与CD",
+    "wordMethod": "等边三角形旋转60°，截长补短拼合三段",
+    "sourceConclusion": "AD−BD=CD（本例60°分支）；一般角用托勒密得到AD−BD=2sin(α/2)CD，但原文方法是旋转相似非直接托勒密",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-sum",
+    "sourceModel": "固定等边ABC与外接圆，D在劣弧BC（AD>BD），旋转△CDB构造等边拼接",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆中截长补短",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q5",
+    "topic": 3,
+    "title": "圆与相似",
+    "group": "题型训练",
+    "sourceRange": [
+      2258,
+      2260
+    ],
+    "conditions": "AB直径,C,D在圆上BC=BD；延长BA至E，∠ADE=∠CBA；BO4,tanCBA1/2",
+    "wordMethod": "等弦等角与半径三角形证明OD⊥ED；直角相似/三角比求ED",
+    "sourceConclusion": "tanCBA1/2使D=(-12/5,16/5)当r4；E=(-20/3,0)，ED=16/3",
+    "sourceProof": [],
+    "flags": [],
+    "method": "tangent",
+    "sourceModel": "A=(-r,0),B=(r,0),D=(r cosθ,r sinθ),C镜像D；E为D切线与AB交点（E在A侧需cosθ<0）",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆与相似",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q6",
+    "topic": 3,
+    "title": "圆中动点问题",
+    "group": "题型训练",
+    "sourceRange": [
+      2286,
+      2289
+    ],
+    "conditions": "AB3,AC4,BC5；以A为圆心圆与BC切于D；P在圆上，CP最大时求BP",
+    "wordMethod": "连圆心与定点，三角不等式，最大值在C,A,P共线且A在CP中间",
+    "sourceConclusion": "CP最大32/5；P=(0,−12/5)，BP=3√41/5",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-farthest",
+    "sourceModel": "A=(0,0),B=(3,0),C=(0,4),r=AB*AC/BC=12/5，P=r(cosθ,sinθ)",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆中动点问题",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q7",
+    "topic": 3,
+    "title": "圆中探究问题",
+    "group": "题型训练",
+    "sourceRange": [
+      2330,
+      2339
+    ],
+    "conditions": "等腰ABC内接圆,AB=AC,D∈BC；将ABD绕A逆时针转到ACE；DE交AC于F；AB3√10,BC6",
+    "wordMethod": "旋转全等→切线判定；相似分点比；面积或二次式求最值",
+    "sourceConclusion": "CE是圆切线；CD/DB=DF/FE；CF最大3√10/10，在D为BC中点时。令A=(0,0),B=(-3,-9),C=(3,-9),D=(x,-9),E=(.8x+5.4,.6x−7.2)，F=uC，u=(x²+81)/90，则CF=√10(9−x²)/30。",
+    "sourceProof": [],
+    "flags": [],
+    "method": "rotation-tangent",
+    "sourceModel": "A=(0,h),B=(-3,0),C=(3,0),h9；D=(t,0)，E为D绕A从AB转向AC；F=DE∩AC",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆中探究问题",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q8",
+    "topic": 3,
+    "title": "圆综合问题",
+    "group": "题型训练",
+    "sourceRange": [
+      2379,
+      2382
+    ],
+    "conditions": "AB半圆直径，P在AB延长，PC切于C；PC交OF延长D，AC交OF于E，DC=DE；OA=2OE,DF2求PB",
+    "wordMethod": "连OC，用等腰角、切线垂直半径证明OD⊥AB；再相似与勾股",
+    "sourceConclusion": "OD⊥AB；DF=r/4=2→r8；PB=2r/3=16/3",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-anglebisector",
+    "sourceModel": "原题核心坐标O0,A(-r,0),B(r,0),F(0,r),E(0,r/2),C=(3r/5,4r/5),D=(0,5r/4),P=(5r/3,0)，r可变",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆综合问题",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t3-q9",
+    "topic": 3,
+    "title": "圆中定值问题",
+    "group": "题型训练",
+    "sourceRange": [
+      2436,
+      2441
+    ],
+    "conditions": "等边ABC外接圆，P在劣弧AB；PA3,PB4求PC；AB4√3时探究PA+PB和平方和",
+    "wordMethod": "圆周角定理；旋转60°拼接得PC=PA+PB；三条弦平方和利用等边三角形对称/勾股",
+    "sourceConclusion": "∠APB120°；PC7；PA+PB∈(4√3,8]；PA²+PB²+PC²=96",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-equilateral-values",
+    "sourceModel": "半径4，A,B,C圆上间隔120°，P在AB劣弧内部移动；显示PA+PB=PC与平方和",
+    "topicName": "圆的综合训练",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题03 / 题型训练 / 圆中定值问题",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-1",
+    "topic": 4,
+    "title": "基本模型一 圆幂定理",
+    "group": "基础模型",
+    "sourceRange": [
+      2504,
+      2506
+    ],
+    "methodRange": [
+      2498,
+      2503
+    ],
+    "conditions": "",
+    "wordMethod": "作过圆心的第二条割线，构造相似，再用平方差",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [
+      "原文 r²=132 是算术笔误。按 PA=4、AB=16、PO=14，应先算 PB=20，再得 r²=196−80=116。"
+    ],
+    "method": "power",
+    "sourceModel": "O=(0,0), r=√116, P=(-14,0)。以角θ转动射线PA，0≤θ≤48°，圆交点为A、B。原题θ=acos(6/7)。",
+    "config": {},
+    "researchConclusion": "PA×PB=OP²−r²=80；原题PB=20，r=2√29。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型一 圆幂定理",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。",
+    "originalLink": "power"
+  },
+  {
+    "id": "t04-2",
+    "topic": 4,
+    "title": "基本模型二 中点弧模型",
+    "group": "基础模型",
+    "sourceRange": [
+      2508,
+      2527
+    ],
+    "methodRange": [
+      2508,
+      2527
+    ],
+    "conditions": "",
+    "wordMethod": "弧中点→等弧→等圆周角；连接圆心形成垂径",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "arc-midpoint",
+    "sourceModel": "圆心O=(0,0),R=3；A=R(cos210°,sin210°),B=R(cos330°,sin330°),C=(0,-3)，P在20°～160°圆弧移动。",
+    "config": {},
+    "researchConclusion": "∠APC=∠CPB，AC=BC，OC⊥AB。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型二 中点弧模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-3",
+    "topic": 4,
+    "title": "基本模型三 内心模型与等腰",
+    "group": "基础模型",
+    "sourceRange": [
+      2533,
+      2537
+    ],
+    "methodRange": [
+      2533,
+      2537
+    ],
+    "conditions": "",
+    "wordMethod": "内心角平分线延长到圆，利用外角与圆周角得到等腰",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "incenter",
+    "sourceModel": "三角形B=(-3,0),C=(3,0),A=(a,4)，a∈[-1.5,1.5]。按边长加权求内心I，作外接圆，射线AI第二次交圆于D。",
+    "config": {},
+    "researchConclusion": "DI=DB=DC；D是远离A的弧BC中点。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型三 内心模型与等腰",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-4",
+    "topic": 4,
+    "title": "基本模型四 线段和差问题",
+    "group": "基础模型",
+    "sourceRange": [
+      2563,
+      2573
+    ],
+    "methodRange": [
+      2563,
+      2573
+    ],
+    "conditions": "",
+    "wordMethod": "补短法：延长DB到F使BF=BA；SAS得MF=MA=MC；垂线平分FC",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "folded-chord",
+    "sourceModel": "圆R=3,A=(-3,0),C=(3,0),M=(0,3)，B在120°～175°上圆弧。D为M在直线BC的投影，F=B+(B−C)/|BC|×AB。",
+    "config": {},
+    "researchConclusion": "AB+BD=CD；此范围BC>AB且D在BC上。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型四 线段和差问题",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-5",
+    "topic": 4,
+    "title": "基本模型五 平行弦与垂直相交弦",
+    "group": "基础模型",
+    "sourceRange": [
+      2622,
+      2626
+    ],
+    "methodRange": [
+      2614,
+      2626
+    ],
+    "conditions": "",
+    "wordMethod": "作直径得到直角，转成平行弦，再用中位线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "intersect-chords",
+    "sourceModel": "O=0,R=3，弦AB水平y=0.5；弦CD竖直x=t,t∈[-1.5,1.5]，C在上D在下。F为O到BC的垂足。过B作直径BE。",
+    "config": {},
+    "researchConclusion": "AD=CE=2OF。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型五 平行弦与垂直相交弦",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-6",
+    "topic": 4,
+    "title": "基本模型六 垂径图",
+    "group": "基础模型",
+    "sourceRange": [
+      2662,
+      2678
+    ],
+    "methodRange": [
+      2662,
+      2678
+    ],
+    "conditions": "",
+    "wordMethod": "垂径定理→弧相等导角→直角三角形互余→中点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "chord",
+    "sourceModel": "圆O=0,R=3，AB为水平直径A(-3,0)B(3,0)，取上弧D角θ∈[20°,140°]，C为上弧AD中点，即角90°+θ/2；E为C关于AB的对称点；P=AD∩CE,Q=AD∩BC。",
+    "config": {},
+    "researchConclusion": "AP=PQ=CP；AD=CE，CO∥BD。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型六 垂径图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-7",
+    "topic": 4,
+    "title": "基本模型七 等腰图",
+    "group": "基础模型",
+    "sourceRange": [
+      2694,
+      2708
+    ],
+    "methodRange": [
+      2694,
+      2708
+    ],
+    "conditions": "",
+    "wordMethod": "直径所对直角；等腰底角；斜边中线得等长",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "isosceles-diameter",
+    "sourceModel": "A=(0,0),B=(6,0),C=6(cosθ,sinθ),θ∈[35°,75°]，以AB为直径作圆，D为BC与圆除B外第二交点。",
+    "config": {},
+    "researchConclusion": "AD⊥BC且BD=CD；OD∥AC。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型七 等腰图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-8",
+    "topic": 4,
+    "title": "基本模型八 双切图",
+    "group": "基础模型",
+    "sourceRange": [
+      2710,
+      2715
+    ],
+    "methodRange": [
+      2710,
+      2715
+    ],
+    "conditions": "",
+    "wordMethod": "连接半径证直角，HL全等得切线长相等，再证垂直平分",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "double-tangent",
+    "sourceModel": "O=0,R=2,P=(d,0),d∈[3,7]。A=(4/d,2√(1−4/d²)),B为A关于x轴的对称点。",
+    "config": {},
+    "researchConclusion": "PA=PB，OP⊥AB且平分∠APB。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型八 双切图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-9",
+    "topic": 4,
+    "title": "基本模型九 射影图",
+    "group": "基础模型",
+    "sourceRange": [
+      2717,
+      2718
+    ],
+    "methodRange": [
+      2717,
+      2718
+    ],
+    "conditions": "",
+    "wordMethod": "直径造直角→斜边上的高→射影定理/相似",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-projection",
+    "sourceModel": "直角三角形A=(0,0),B=(6,0),C=(6,t),t∈[2,8]，以AB为直径作圆，D为B在AC的垂足（也是圆与AC第二交点）。 另取E为BC中点，连接DE。",
+    "config": {},
+    "researchConclusion": "AB²=AD×AC，BD²=AD×DC。 因直角△BDC的斜边中点满足ED=EB，再导角可证DE⊥OD，即DE为圆切线。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型九 射影图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-10",
+    "topic": 4,
+    "title": "基本模型十 切割图",
+    "group": "基础模型",
+    "sourceRange": [
+      2720,
+      2722
+    ],
+    "methodRange": [
+      2720,
+      2722
+    ],
+    "conditions": "",
+    "wordMethod": "切点半径与切线垂直，平行导角，再用等腰半径得角平分线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-anglebisector",
+    "sourceModel": "O=0,R=3,A=(-3,0),B=(3,0),C=R(cosθ,sinθ),θ∈[35°,145°]。过C作切线，D是A到切线的垂足。",
+    "config": {},
+    "researchConclusion": "AC平分∠DAB（按图的较小内角），源于AD∥OC。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 基础模型 / 基本模型十 切割图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-11",
+    "topic": 4,
+    "title": "题型1 弦切角定理与切割线定理",
+    "group": "题型训练",
+    "sourceRange": [
+      2728,
+      2729
+    ],
+    "methodRange": [
+      2720,
+      2722
+    ],
+    "conditions": "",
+    "wordMethod": "切点半径与切线垂直，平行导角，再用等腰半径得角平分线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "tangent",
+    "sourceModel": "O=0,R=3,A=(-3,0),B=(3,0),C=R(cosθ,sinθ),θ∈[35°,145°]。过C作切线，D是A到切线的垂足。",
+    "config": {},
+    "researchConclusion": "AC平分∠DAB（按图的较小内角），源于AD∥OC。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型1 弦切角定理与切割线定理",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-12",
+    "topic": 4,
+    "title": "题型2 中点弧模型",
+    "group": "题型训练",
+    "sourceRange": [
+      2761,
+      2765
+    ],
+    "methodRange": [
+      2508,
+      2527
+    ],
+    "conditions": "",
+    "wordMethod": "弧中点→等弧→等圆周角；连接圆心形成垂径",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "arc-midpoint",
+    "sourceModel": "圆心O=(0,0),R=3；A=R(cos210°,sin210°),B=R(cos330°,sin330°),C=(0,-3)，P在20°～160°圆弧移动。",
+    "config": {},
+    "researchConclusion": "∠APC=∠CPB，AC=BC，OC⊥AB。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型2 中点弧模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-13",
+    "topic": 4,
+    "title": "题型3 内心模型",
+    "group": "题型训练",
+    "sourceRange": [
+      2822,
+      2825
+    ],
+    "methodRange": [
+      2533,
+      2537
+    ],
+    "conditions": "",
+    "wordMethod": "内心角平分线延长到圆，利用外角与圆周角得到等腰",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "incenter",
+    "sourceModel": "三角形B=(-3,0),C=(3,0),A=(a,4)，a∈[-1.5,1.5]。按边长加权求内心I，作外接圆，射线AI第二次交圆于D。",
+    "config": {},
+    "researchConclusion": "DI=DB=DC；D是远离A的弧BC中点。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型3 内心模型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-14",
+    "topic": 4,
+    "title": "题型4 线段和差问题构造手拉手",
+    "group": "题型训练",
+    "sourceRange": [
+      2851,
+      2861
+    ],
+    "methodRange": [
+      2851,
+      2861
+    ],
+    "conditions": "",
+    "wordMethod": "原文补短法：延长PA使AE=PC，连接BE，证明△PBC≌△EBA，再得到等边△PBE。",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-sum",
+    "sourceModel": "圆R=3，等边ABC：A90°、B210°、C330°；P在不含B的劣弧AC移动，角度340°～440°。延长PA至E使AE=PC。",
+    "config": {},
+    "researchConclusion": "PB=PA+PC；不是PA=PB+PC，因为本例P在弧AC上。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型4 线段和差问题构造手拉手",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-15",
+    "topic": 4,
+    "title": "题型5 阿基米德折弦定理",
+    "group": "题型训练",
+    "sourceRange": [
+      2882,
+      2883
+    ],
+    "methodRange": [
+      2563,
+      2573
+    ],
+    "conditions": "",
+    "wordMethod": "补短法：延长DB到F使BF=BA；SAS得MF=MA=MC；垂线平分FC",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "folded-chord",
+    "sourceModel": "圆R=3,A=(-3,0),C=(3,0),M=(0,3)，B在120°～175°上圆弧。D为M在直线BC的投影，F=B+(B−C)/|BC|×AB。",
+    "config": {},
+    "researchConclusion": "AB+BD=CD；此范围BC>AB且D在BC上。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型5 阿基米德折弦定理",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-16",
+    "topic": 4,
+    "title": "题型6 平行弦与相交弦垂直线割线",
+    "group": "题型训练",
+    "sourceRange": [
+      2920,
+      2923
+    ],
+    "methodRange": [
+      2614,
+      2626
+    ],
+    "conditions": "",
+    "wordMethod": "作直径得到直角，转成平行弦，再用中位线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "intersect-chords",
+    "sourceModel": "O=0,R=3，弦AB水平y=0.5；弦CD竖直x=t,t∈[-1.5,1.5]，C在上D在下。F为O到BC的垂足。过B作直径BE。",
+    "config": {},
+    "researchConclusion": "AD=CE=2OF。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型6 平行弦与相交弦垂直线割线",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-17",
+    "topic": 4,
+    "title": "题型7 垂径图",
+    "group": "题型训练",
+    "sourceRange": [
+      2945,
+      2948
+    ],
+    "methodRange": [
+      2662,
+      2678
+    ],
+    "conditions": "",
+    "wordMethod": "垂径定理→弧相等导角→直角三角形互余→中点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "chord",
+    "sourceModel": "圆O=0,R=3，AB为水平直径A(-3,0)B(3,0)，取上弧D角θ∈[20°,140°]，C为上弧AD中点，即角90°+θ/2；E为C关于AB的对称点；P=AD∩CE,Q=AD∩BC。",
+    "config": {},
+    "researchConclusion": "AP=PQ=CP；AD=CE，CO∥BD。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型7 垂径图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-18",
+    "topic": 4,
+    "title": "题型8 等腰图",
+    "group": "题型训练",
+    "sourceRange": [
+      2982,
+      2983
+    ],
+    "methodRange": [
+      2694,
+      2708
+    ],
+    "conditions": "",
+    "wordMethod": "直径所对直角；等腰底角；斜边中线得等长",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "isosceles-diameter",
+    "sourceModel": "A=(0,0),B=(6,0),C=6(cosθ,sinθ),θ∈[35°,75°]，以AB为直径作圆，D为BC与圆除B外第二交点。",
+    "config": {},
+    "researchConclusion": "AD⊥BC且BD=CD；OD∥AC。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型8 等腰图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-19",
+    "topic": 4,
+    "title": "题型9 双切图",
+    "group": "题型训练",
+    "sourceRange": [
+      3003,
+      3005
+    ],
+    "methodRange": [
+      2710,
+      2715
+    ],
+    "conditions": "",
+    "wordMethod": "连接半径证直角，HL全等得切线长相等，再证垂直平分",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "double-tangent",
+    "sourceModel": "O=0,R=2,P=(d,0),d∈[3,7]。A=(4/d,2√(1−4/d²)),B为A关于x轴的对称点。",
+    "config": {},
+    "researchConclusion": "PA=PB，OP⊥AB且平分∠APB。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型9 双切图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-20",
+    "topic": 4,
+    "title": "题型10 射影图",
+    "group": "题型训练",
+    "sourceRange": [
+      3042,
+      3043
+    ],
+    "methodRange": [
+      2717,
+      2718
+    ],
+    "conditions": "",
+    "wordMethod": "直径造直角→斜边上的高→射影定理/相似",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-projection",
+    "sourceModel": "直角三角形A=(0,0),B=(6,0),C=(6,t),t∈[2,8]，以AB为直径作圆，D为B在AC的垂足（也是圆与AC第二交点）。 另取E为BC中点，连接DE。",
+    "config": {},
+    "researchConclusion": "AB²=AD×AC，BD²=AD×DC。 因直角△BDC的斜边中点满足ED=EB，再导角可证DE⊥OD，即DE为圆切线。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型10 射影图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-21",
+    "topic": 4,
+    "title": "题型11 切割图",
+    "group": "题型训练",
+    "sourceRange": [
+      3065,
+      3066
+    ],
+    "methodRange": [
+      2720,
+      2722
+    ],
+    "conditions": "",
+    "wordMethod": "切点半径与切线垂直，平行导角，再用等腰半径得角平分线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-anglebisector",
+    "sourceModel": "O=0,R=3,A=(-3,0),B=(3,0),C=R(cosθ,sinθ),θ∈[35°,145°]。过C作切线，D是A到切线的垂足。",
+    "config": {},
+    "researchConclusion": "AC平分∠DAB（按图的较小内角），源于AD∥OC。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型11 切割图",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-22",
+    "topic": 4,
+    "title": "题型12 圆与三角函数综合",
+    "group": "题型训练",
+    "sourceRange": [
+      3099,
+      3102
+    ],
+    "methodRange": [
+      2720,
+      2722
+    ],
+    "conditions": "",
+    "wordMethod": "切点半径与切线垂直，平行导角，再用等腰半径得角平分线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "circle-anglebisector",
+    "sourceModel": "O=0,R=3,A=(-3,0),B=(3,0),C=R(cosθ,sinθ),θ∈[35°,145°]。过C作切线，D是A到切线的垂足。",
+    "config": {},
+    "researchConclusion": "AC平分∠DAB（按图的较小内角），源于AD∥OC。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型12 圆与三角函数综合",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t04-23",
+    "topic": 4,
+    "title": "题型13 圆与相似综合",
+    "group": "题型训练",
+    "sourceRange": [
+      3125,
+      3131
+    ],
+    "methodRange": [
+      2662,
+      2678
+    ],
+    "conditions": "",
+    "wordMethod": "垂径定理→弧相等导角→直角三角形互余→中点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "chord",
+    "sourceModel": "圆O=0,R=3，AB为水平直径A(-3,0)B(3,0)，取上弧D角θ∈[20°,140°]，C为上弧AD中点，即角90°+θ/2；E为C关于AB的对称点；P=AD∩CE,Q=AD∩BC。",
+    "config": {},
+    "researchConclusion": "AP=PQ=CP；AD=CE，CO∥BD。",
+    "topicName": "圆的常考模型归纳",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题04 / 题型训练 / 题型13 圆与相似综合",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-24",
+    "topic": 5,
+    "title": "模块一 题型1 两定一动型",
+    "group": "模块一",
+    "sourceRange": [
+      3231,
+      3232
+    ],
+    "methodRange": [
+      3162,
+      3163
+    ],
+    "conditions": "",
+    "wordMethod": "将军饮马：关于直线反射一端，将折线转为直线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "reflection",
+    "sourceModel": "l:y=0，A=(−3,3),B=(4,2)，P=(t,0),t∈[−6,7]。B′=(4,−2)。",
+    "config": {},
+    "researchConclusion": "AP+PB≥AB′=√74，等号在P=l∩AB′。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型1 两定一动型",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-25",
+    "topic": 5,
+    "title": "模块一 题型2 双动点两次对称",
+    "group": "模块一",
+    "sourceRange": [
+      3246,
+      3247
+    ],
+    "methodRange": [
+      3173,
+      3180
+    ],
+    "conditions": "",
+    "wordMethod": "分别作两次对称，再连接像点，检验连线穿越两条边的顺序",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [
+      "路径长度的下界应写成“≥直线段”，不能把三角不等式方向写反。"
+    ],
+    "method": "double-reflection",
+    "sourceModel": "A=(0,0),B=(4,0),D=4(cos125°,sin125°),C为过B垂直AB的线与过D垂直AD的线的交点。M沿BC、N沿CD运动。",
+    "config": {},
+    "researchConclusion": "周长≥A1A2=2BD，像点连线确实经过两边内部；最优∠MAN=70°，符合原题只求角度。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型2 双动点两次对称",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-26",
+    "topic": 5,
+    "title": "模块一 题型3 动线段造桥选址",
+    "group": "模块一",
+    "sourceRange": [
+      3268,
+      3269
+    ],
+    "methodRange": [
+      3186,
+      3193
+    ],
+    "conditions": "",
+    "wordMethod": "平移消去固定长度，构造平行四边形，再将军饮马",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [
+      "平移后路径长度应“≥直线段+桥长”，等号须检查共线与岸线交点。"
+    ],
+    "method": "bridge",
+    "sourceModel": "l:y=0，A=(-2,3),B=(5,2)，M=(t,0),N=(t+2,0)，t∈[-5,6]。B′=(3,2)，再反射B′到(3,-2)。",
+    "config": {},
+    "researchConclusion": "AM+MN+NB最小=√50+2。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型3 动线段造桥选址",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-27",
+    "topic": 5,
+    "title": "模块一 题型4 垂线段最短",
+    "group": "模块一",
+    "sourceRange": [
+      3273,
+      3287
+    ],
+    "methodRange": [
+      3273,
+      3273
+    ],
+    "conditions": "",
+    "wordMethod": "关于角平分线反射，再用折线≥线段、斜线≥垂线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "perpendicular-min",
+    "sourceModel": "∠MON=45°，OM为x轴，A=(4,0)，E=t(cos22.5°,sin22.5°)，F=(u,0)。",
+    "config": {},
+    "researchConclusion": "min(AE+EF)=2√2；E、F均在规定射线上可达。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型4 垂线段最短",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。",
+    "originalLink": "reflection"
+  },
+  {
+    "id": "t05-28",
+    "topic": 5,
+    "title": "模块一 题型5 相对运动平移型将军饮马",
+    "group": "模块一",
+    "sourceRange": [
+      3326,
+      3327
+    ],
+    "methodRange": [
+      3186,
+      3193
+    ],
+    "conditions": "",
+    "wordMethod": "平移消去固定长度，构造平行四边形，再将军饮马",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "moving-segment",
+    "sourceModel": "l:y=0，A=(-2,3),B=(5,2)，M=(t,0),N=(t+2,0)，t∈[-5,6]。B′=(3,2)，再反射B′到(3,-2)。",
+    "config": {},
+    "researchConclusion": "AM+MN+NB最小=√50+2。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型5 相对运动平移型将军饮马",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-29",
+    "topic": 5,
+    "title": "模块一 题型6 化斜为直",
+    "group": "模块一",
+    "sourceRange": [
+      3336,
+      3349
+    ],
+    "methodRange": [
+      3215,
+      3219
+    ],
+    "conditions": "",
+    "wordMethod": "化斜为直：取斜边中点，利用直角三角形斜边中线及垂线段最短",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "slant",
+    "sourceModel": "半圆O=0,R=3,BC为直径，A在上半圆移动，H为A到BC的垂足。",
+    "config": {},
+    "researchConclusion": "AH≤AO=3，AH最大为3，在AO⊥BC时等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型6 化斜为直",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-30",
+    "topic": 5,
+    "title": "模块一 题型7 构造二次函数模型求最值",
+    "group": "模块一",
+    "sourceRange": [
+      3414,
+      3426
+    ],
+    "methodRange": [
+      4490,
+      4502
+    ],
+    "conditions": "",
+    "wordMethod": "相似表示长宽/高，再构造二次函数配方",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "quadratic",
+    "sourceModel": "A=(4,0),B=(0,4),C=(−2,0)，D=(4−6t,0),E=(4−4t,4t),0≤t≤1，DE∥BC。",
+    "config": {},
+    "researchConclusion": "S_BDE=12t(1−t)≤3，t=1/2时最大。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型7 构造二次函数模型求最值",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-31",
+    "topic": 5,
+    "title": "模块一 题型8 瓜豆轨迹后将军饮马",
+    "group": "模块一",
+    "sourceRange": [
+      3438,
+      3439
+    ],
+    "methodRange": [
+      3697,
+      3780
+    ],
+    "conditions": "",
+    "wordMethod": "定角定比，构造手拉手；先找始末点定轨迹，或反向旋转定点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "locus-line",
+    "sourceModel": "A=(0,2√3),B=(-2,0),C=(2,0),D=(0,0),E=(1,√3)，P=(0,t),0≤t≤2√3，P′=C+R60(P−C)。",
+    "config": {},
+    "researchConclusion": "P′沿线段运动；EP′=GP，最小为3。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块一 / 模块一 题型8 瓜豆轨迹后将军饮马",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-32",
+    "topic": 5,
+    "title": "模块二 题型1 胡不归已有相关角",
+    "group": "模块二",
+    "sourceRange": [
+      3450,
+      3451
+    ],
+    "methodRange": [
+      3443,
+      3448
+    ],
+    "conditions": "A=(0,√15), C=(1,0)，AB=AC，D为射线AO上一点，沿A-D-C行走；AD速度4，CD速度1。目标AD/4+DC。原题中B位置需配图；最优D=(0,1/√15)，最短时间(√15)/4+√15/4=√15/2（计算请复核）。",
+    "wordMethod": "胡不归：构造sinα=k的射线，把kAP替换为垂线PH，再化折为直",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "weighted-perp",
+    "sourceModel": "A=(0,0),B=(4,3),P=(x,0),x∈[0,7]，目标BP+AP/2。作从A向右下方与x轴成30°的射线l，H为P到l的垂足。",
+    "config": {},
+    "researchConclusion": "BP+AP/2=BP+PH≥BH≥dist(B,l)=2+3√3/2；P=(4−√3,0)时取等号。射线必须选在基线下侧，若画在上侧可能无法取得下界。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块二 / 模块二 题型1 胡不归已有相关角",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-33",
+    "topic": 5,
+    "title": "模块二 题型2 胡不归构造相关角",
+    "group": "模块二",
+    "sourceRange": [
+      3468,
+      3469
+    ],
+    "methodRange": [
+      3443,
+      3448
+    ],
+    "conditions": "Rt△ACB中∠ACB=90°，AC=2，AB=4，P∈AB，求PC+PB/2最小值。原文填3，实际上P=C不在AB；端点A得2+2=4，B得2√3≈3.464，内点可得3，数值合理。",
+    "wordMethod": "胡不归：构造sinα=k的射线，把kAP替换为垂线PH，再化折为直",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "weighted-perp",
+    "sourceModel": "A=(0,0),B=(4,3),P=(x,0),x∈[0,7]，目标BP+AP/2。作从A向右下方与x轴成30°的射线l，H为P到l的垂足。",
+    "config": {},
+    "researchConclusion": "BP+AP/2=BP+PH≥BH≥dist(B,l)=2+3√3/2；P=(4−√3,0)时取等号。射线必须选在基线下侧，若画在上侧可能无法取得下界。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块二 / 模块二 题型2 胡不归构造相关角",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-34",
+    "topic": 5,
+    "title": "模块三 题型1 两定点在圆外向内取点",
+    "group": "模块三",
+    "sourceRange": [
+      3509,
+      3510
+    ],
+    "methodRange": [
+      3484,
+      3492
+    ],
+    "conditions": "",
+    "wordMethod": "阿氏圆向内取逆点，构造母子相似消去小于1的系数，再将军饮马",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "apollonius-min",
+    "sourceModel": "O=(0,0),R=2,B=(4,0),B*=(1,0),A=(-3,3)，P沿圆移动；OB×OB*=R²。",
+    "config": {
+      "variant": "out"
+    },
+    "researchConclusion": "PB=2PB*，PA+PB/2=PA+PB*≥AB*=5；直线AB*与圆靠近A的交点可达等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块三 / 模块三 题型1 两定点在圆外向内取点",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-35",
+    "topic": 5,
+    "title": "模块三 题型2 两点在圆内向外取点",
+    "group": "模块三",
+    "sourceRange": [
+      3517,
+      3518
+    ],
+    "methodRange": [
+      3484,
+      3492
+    ],
+    "conditions": "",
+    "wordMethod": "阿氏圆向外取逆点，构造母子相似消去大于1的系数",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "apollonius-min",
+    "sourceModel": "O=(0,0),R=2,B=(1,0),B*=(4,0),A=(0,1)，P沿圆移动。",
+    "config": {
+      "variant": "in"
+    },
+    "researchConclusion": "2PB=PB*，PA+2PB=PA+PB*≥AB*=√17；A在圆内、B*圆外，因此线段AB*穿圆可取等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块三 / 模块三 题型2 两点在圆内向外取点",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-36",
+    "topic": 5,
+    "title": "模块三 题型3 一内一外提系数",
+    "group": "模块三",
+    "sourceRange": [
+      3522,
+      3523
+    ],
+    "methodRange": [
+      3484,
+      3492
+    ],
+    "conditions": "Rt△ABC，∠ABC=90°，AB=2BC=6，D在BC上且BD=1，P在以B为圆心、3为半径圆上，求AP+6PD。截图完整恢复。",
+    "wordMethod": "一内一外先提出系数，选择逆点，转为两段距离和",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "apollonius-min",
+    "sourceModel": "O=(0,0),R=2,A=(-3,3),B=(1,0),B*=(4,0)，P沿圆移动；探索PA/2+PB=1/2(PA+PB*)。",
+    "config": {
+      "variant": "mixed"
+    },
+    "researchConclusion": "下界为AB*/2=√58/2；但线段AB*是否穿过圆必须核验（此示例到直线距离12/√58<2，故有交点）。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块三 / 模块三 题型3 一内一外提系数",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-37",
+    "topic": 5,
+    "title": "模块三 题型4 隐圆加阿氏圆",
+    "group": "模块三",
+    "sourceRange": [
+      3530,
+      3531
+    ],
+    "methodRange": [
+      3484,
+      3492
+    ],
+    "conditions": "",
+    "wordMethod": "先由折叠定长确定隐圆，再用逆点母子相似消权",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "apollonius-min",
+    "sourceModel": "A=(0,0)，以AB=2的折叠像点P为主动点，因此AP=2；固定B=(4,0),B*=(1,0),C=(-3,3)。",
+    "config": {
+      "variant": "hidden"
+    },
+    "researchConclusion": "AP定长才可使用此圆的逆点关系；PB=2PB*，最短转化为CB*=5。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块三 / 模块三 题型4 隐圆加阿氏圆",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-38",
+    "topic": 5,
+    "title": "模块四 题型1 平移对称或平行四边形",
+    "group": "模块四",
+    "sourceRange": [
+      3568,
+      3569
+    ],
+    "methodRange": [
+      3542,
+      3564
+    ],
+    "conditions": "",
+    "wordMethod": "一边一角造SAS全等，将逆等线转成首尾相连折线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "splice",
+    "sourceModel": "矩形A=(0,0),B=(6,0),C=(6,4),D=(0,4)，E=(t,0),F=(t,4),t∈[0,6]。",
+    "config": {},
+    "researchConclusion": "AF+CE=√(t²+16)+√((6−t)²+16)≥10，t=3时取等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块四 / 模块四 题型1 平移对称或平行四边形",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-39",
+    "topic": 5,
+    "title": "模块四 题型2 SAS全等拼接",
+    "group": "模块四",
+    "sourceRange": [
+      3596,
+      3608
+    ],
+    "methodRange": [
+      3542,
+      3564
+    ],
+    "conditions": "",
+    "wordMethod": "一边一角造SAS全等，将逆等线转成首尾相连折线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "splice",
+    "sourceModel": "矩形A=(0,0),B=(6,0),C=(6,4),D=(0,4)，E=(t,0),F=(t,4),t∈[0,6]。",
+    "config": {},
+    "researchConclusion": "AF+CE=√(t²+16)+√((6−t)²+16)≥10，t=3时取等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块四 / 模块四 题型2 SAS全等拼接",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-40",
+    "topic": 5,
+    "title": "模块四 题型3 加权逆等线",
+    "group": "模块四",
+    "sourceRange": [
+      3676,
+      3677
+    ],
+    "methodRange": [
+      3544,
+      3548
+    ],
+    "conditions": "",
+    "wordMethod": "先按系数缩放，构造相似/全等，把加权段拼成折线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "weighted-splice",
+    "sourceModel": "一般原理实验：固定旋转中心O，Q=kRθ(P)，A′=kRθ(A)，则A′Q=kAP。k可选1/2、2，θ90°。",
+    "config": {},
+    "researchConclusion": "正确的相似变换使系数成为真实长度比；不能在不改变图形时直接删去系数。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块四 / 模块四 题型3 加权逆等线",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-41",
+    "topic": 5,
+    "title": "模块四 题型4 最小时求其它量",
+    "group": "模块四",
+    "sourceRange": [
+      3693,
+      3694
+    ],
+    "methodRange": [
+      3542,
+      3564
+    ],
+    "conditions": "",
+    "wordMethod": "一边一角造SAS全等，将逆等线转成首尾相连折线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "splice",
+    "sourceModel": "矩形A=(0,0),B=(6,0),C=(6,4),D=(0,4)，E=(t,0),F=(t,4),t∈[0,6]。",
+    "config": {},
+    "researchConclusion": "AF+CE=√(t²+16)+√((6−t)²+16)≥10，t=3时取等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块四 / 模块四 题型4 最小时求其它量",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-42",
+    "topic": 5,
+    "title": "模块五 题型1 构造中位线",
+    "group": "模块五",
+    "sourceRange": [
+      3812,
+      3813
+    ],
+    "methodRange": [
+      3798,
+      3809
+    ],
+    "conditions": "",
+    "wordMethod": "连接定点与圆心，取中点，构造三角形中位线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [
+      "原文中点模型某处 AM=AO 应为 AM=AO/2；实验按中点定义处理。"
+    ],
+    "method": "locus-midpoint",
+    "sourceModel": "圆O=(0,0),R=3，A=(6,0)，P沿圆移动，Q=(A+P)/2，M=(A+O)/2。",
+    "config": {},
+    "researchConclusion": "Q轨迹为圆(M,1.5)，MQ=OP/2。原文AM=AO有漏写1/2。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块五 / 模块五 题型1 构造中位线",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-43",
+    "topic": 5,
+    "title": "模块五 题型2 直线型轨迹",
+    "group": "模块五",
+    "sourceRange": [
+      3825,
+      3826
+    ],
+    "methodRange": [
+      3697,
+      3780
+    ],
+    "conditions": "",
+    "wordMethod": "定角定比，构造手拉手；先找始末点定轨迹，或反向旋转定点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "locus-line",
+    "sourceModel": "A=(0,2√3),B=(-2,0),C=(2,0),D=(0,0),E=(1,√3)，P=(0,t),0≤t≤2√3，P′=C+R60(P−C)。",
+    "config": {},
+    "researchConclusion": "P′沿线段运动；EP′=GP，最小为3。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块五 / 模块五 题型2 直线型轨迹",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-44",
+    "topic": 5,
+    "title": "模块五 题型3 线段和",
+    "group": "模块五",
+    "sourceRange": [
+      3852,
+      3864
+    ],
+    "methodRange": [
+      3697,
+      3780
+    ],
+    "conditions": "",
+    "wordMethod": "定角定比，构造手拉手；先找始末点定轨迹，或反向旋转定点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "locus-line",
+    "sourceModel": "A=(0,2√3),B=(-2,0),C=(2,0),D=(0,0),E=(1,√3)，P=(0,t),0≤t≤2√3，P′=C+R60(P−C)。",
+    "config": {},
+    "researchConclusion": "P′沿线段运动；EP′=GP，最小为3。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块五 / 模块五 题型3 线段和",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-45",
+    "topic": 5,
+    "title": "模块五 题型4 圆弧型轨迹",
+    "group": "模块五",
+    "sourceRange": [
+      3885,
+      3897
+    ],
+    "methodRange": [
+      3798,
+      3809
+    ],
+    "conditions": "",
+    "wordMethod": "连接定点与圆心，取中点，构造三角形中位线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "locus-circle",
+    "sourceModel": "圆O=(0,0),R=3，A=(6,0)，P沿圆移动，Q=(A+P)/2，M=(A+O)/2。",
+    "config": {},
+    "researchConclusion": "Q轨迹为圆(M,1.5)，MQ=OP/2。原文AM=AO有漏写1/2。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块五 / 模块五 题型4 圆弧型轨迹",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-46",
+    "topic": 5,
+    "title": "模块五 题型5 加权线段和",
+    "group": "模块五",
+    "sourceRange": [
+      3900,
+      3913
+    ],
+    "methodRange": [
+      3544,
+      3548
+    ],
+    "conditions": "矩形ABCD，AB=2,AD=2√3，E∈AD，以CE为边向右作Rt△CEF，∠CEF=90°,∠CFE=30°，求BE+BF/2最小值。",
+    "wordMethod": "先按系数缩放，构造相似/全等，把加权段拼成折线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "weighted-splice",
+    "sourceModel": "一般原理实验：固定旋转中心O，Q=kRθ(P)，A′=kRθ(A)，则A′Q=kAP。k可选1/2、2，θ90°。",
+    "config": {},
+    "researchConclusion": "正确的相似变换使系数成为真实长度比；不能在不改变图形时直接删去系数。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块五 / 模块五 题型5 加权线段和",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-47",
+    "topic": 5,
+    "title": "模块五 题型6 路径长度",
+    "group": "模块五",
+    "sourceRange": [
+      3934,
+      3947
+    ],
+    "methodRange": [
+      3697,
+      3780
+    ],
+    "conditions": "",
+    "wordMethod": "定角定比，构造手拉手；先找始末点定轨迹，或反向旋转定点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "locus-line",
+    "sourceModel": "A=(0,2√3),B=(-2,0),C=(2,0),D=(0,0),E=(1,√3)，P=(0,t),0≤t≤2√3，P′=C+R60(P−C)。",
+    "config": {},
+    "researchConclusion": "P′沿线段运动；EP′=GP，最小为3。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块五 / 模块五 题型6 路径长度",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-48",
+    "topic": 5,
+    "title": "模块五 题型7 最值时求其它量",
+    "group": "模块五",
+    "sourceRange": [
+      3956,
+      3957
+    ],
+    "methodRange": [
+      3697,
+      3780
+    ],
+    "conditions": "",
+    "wordMethod": "定角定比，构造手拉手；先找始末点定轨迹，或反向旋转定点",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "locus-line",
+    "sourceModel": "A=(0,2√3),B=(-2,0),C=(2,0),D=(0,0),E=(1,√3)，P=(0,t),0≤t≤2√3，P′=C+R60(P−C)。",
+    "config": {},
+    "researchConclusion": "P′沿线段运动；EP′=GP，最小为3。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块五 / 模块五 题型7 最值时求其它量",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-49",
+    "topic": 5,
+    "title": "模块六 题型1 普通费马点",
+    "group": "模块六",
+    "sourceRange": [
+      4058,
+      4065
+    ],
+    "methodRange": [
+      3986,
+      3996
+    ],
+    "conditions": "",
+    "wordMethod": "旋转60°，等边三角形把三段距离拼接，再用两点间线段最短",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "fermat",
+    "sourceModel": "A=(0,4),B=(-3,0),C=(3,0)，P在三角形内部。将A、P绕C向外旋转60°得A′、P′。",
+    "config": {},
+    "researchConclusion": "三角形各角<120°时，内点最优使三个张角均120°；若最大角≥120°，最优在该顶点。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块六 / 模块六 题型1 普通费马点",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-50",
+    "topic": 5,
+    "title": "模块六 题型2 单系数加权费马点",
+    "group": "模块六",
+    "sourceRange": [
+      4084,
+      4086
+    ],
+    "methodRange": [
+      4007,
+      4040
+    ],
+    "conditions": "△ABC，∠ACB=30°，BC=5，AC=6；D为内部动点，求DA+DB+√2 DC最小值。",
+    "wordMethod": "单系数选90°/120°旋转，多系数先提最小系数，再缩放，最大系数对应旋转中心",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "weighted-fermat-original",
+    "sourceModel": "O=0，P自由移动，P′=kR90(P)，则PP′=√(1+k²)OP。以k=4/3展示3PP′=5OP、3OP′=4OP的3:4:5长度关系。",
+    "config": {},
+    "researchConclusion": "k=4/3、90°时OP:OP′:PP′=3:4:5。加权最值还须核验拼接共线及允许区域。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块六 / 模块六 题型2 单系数加权费马点",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-51",
+    "topic": 5,
+    "title": "模块六 题型3 多系数加权费马点",
+    "group": "模块六",
+    "sourceRange": [
+      4093,
+      4094
+    ],
+    "methodRange": [
+      4007,
+      4040
+    ],
+    "conditions": "ABC为边长4的等边三角形，P在三角形内部，求3AP+4BP+5CP的最小值。",
+    "wordMethod": "单系数选90°/120°旋转，多系数先提最小系数，再缩放，最大系数对应旋转中心",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [
+      "已核对原图公式：目标为3AP+4BP+5CP，纯文本提取遗漏的PC系数5已补全。"
+    ],
+    "method": "multi-fermat",
+    "sourceModel": "A=(0,2√3),B=(-2,0),C=(2,0)。P在内部，P′=C+(4/3)R90(P−C)，B′=C+(4/3)R90(B−C)=(2,−16/3)。",
+    "config": {},
+    "researchConclusion": "3P′B′=4PB，3PP′=5PC，目标=3(AP+PP′+P′B′)≥3AB′=√(400+192√3)。需验证P、P′在AB′上依次排列且P在△ABC内。 已独立数值核验：最优P≈(0.650538,0.602571)，P′≈(1.196573,−1.799283)，均在A→B′直线上按A,P,P′,B′排列；P在三角形内部，所以最小值约27.065730确实可达。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块六 / 模块六 题型3 多系数加权费马点",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-52",
+    "topic": 5,
+    "title": "模块七 题型1 定点定长得圆",
+    "group": "模块七",
+    "sourceRange": [
+      4168,
+      4169
+    ],
+    "methodRange": [
+      3798,
+      3809
+    ],
+    "conditions": "",
+    "wordMethod": "连接定点与圆心，取中点，构造三角形中位线",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "locus-circle",
+    "sourceModel": "圆O=(0,0),R=3，A=(6,0)，P沿圆移动，Q=(A+P)/2，M=(A+O)/2。",
+    "config": {},
+    "researchConclusion": "Q轨迹为圆(M,1.5)，MQ=OP/2。原文AM=AO有漏写1/2。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型1 定点定长得圆",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-53",
+    "topic": 5,
+    "title": "模块七 题型2 直角对边是直径",
+    "group": "模块七",
+    "sourceRange": [
+      4182,
+      4196
+    ],
+    "methodRange": [
+      4126,
+      4146
+    ],
+    "conditions": "",
+    "wordMethod": "从定点定长、直角或对角互补发现隐圆，再转点圆距离最值",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "hidden-circle",
+    "sourceModel": "A=(-2,0),B=(2,0)，P=(2cosθ,2sinθ),θ∈[10°,170°]，固定Q=(0,5)。",
+    "config": {},
+    "researchConclusion": "∠APB=90°说明P在定圆；QP最小为3，在P=(0,2)可达。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型2 直角对边是直径",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-54",
+    "topic": 5,
+    "title": "模块七 题型3 对角互补得圆",
+    "group": "模块七",
+    "sourceRange": [
+      4236,
+      4237
+    ],
+    "methodRange": [
+      4126,
+      4146
+    ],
+    "conditions": "",
+    "wordMethod": "从定点定长、直角或对角互补发现隐圆，再转点圆距离最值",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "cyclic",
+    "sourceModel": "A=(-2,0),B=(2,0)，P=(2cosθ,2sinθ),θ∈[10°,170°]，固定Q=(0,5)。",
+    "config": {},
+    "researchConclusion": "∠APB=90°说明P在定圆；QP最小为3，在P=(0,2)可达。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型3 对角互补得圆",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-55",
+    "topic": 5,
+    "title": "模块七 题型4 定弦定角得圆",
+    "group": "模块七",
+    "sourceRange": [
+      4244,
+      4254
+    ],
+    "methodRange": [
+      4138,
+      4142
+    ],
+    "conditions": "",
+    "wordMethod": "定弦定角得辅助圆，再把所求式转换为点圆距离",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "cyclic",
+    "sourceModel": "B=(-1,0),C=(1,0),D=(0,0)，∠DAC=45°。A在经过D、C的圆上且满足45°的优弧移动；取圆心O=(0.5,0.5),R=√2/2，A参数角取10°～220°，避开D、C，始终有∠DAC=45°。",
+    "config": {},
+    "researchConclusion": "由阿波罗尼斯中线式AB²+AC²=2AD²+2。AD≤OD+R=√2，因此最大值6，可达。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型4 定弦定角得圆",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-56",
+    "topic": 5,
+    "title": "模块七 题型5 四点共圆",
+    "group": "模块七",
+    "sourceRange": [
+      4280,
+      4291
+    ],
+    "methodRange": [
+      4126,
+      4146
+    ],
+    "conditions": "",
+    "wordMethod": "从定点定长、直角或对角互补发现隐圆，再转点圆距离最值",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "cyclic",
+    "sourceModel": "A=(-2,0),B=(2,0)，P=(2cosθ,2sinθ),θ∈[10°,170°]，固定Q=(0,5)。",
+    "config": {},
+    "researchConclusion": "∠APB=90°说明P在定圆；QP最小为3，在P=(0,2)可达。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型5 四点共圆",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-57",
+    "topic": 5,
+    "title": "模块七 题型6 相切时取最值",
+    "group": "模块七",
+    "sourceRange": [
+      4324,
+      4338
+    ],
+    "methodRange": [
+      4126,
+      4146
+    ],
+    "conditions": "矩形ABCD中AB=6、AD=8，E在CD上，BG垂直AE于G；CG延长交AD于F，求AF的最大值。",
+    "wordMethod": "从定点定长、直角或对角互补发现隐圆，再转点圆距离最值",
+    "sourceConclusion": "AF 的最大值为 9/8，在 CE=3 时取得。",
+    "sourceProof": [],
+    "flags": [],
+    "method": "rectangle-circle-tangent",
+    "sourceModel": "A=(-2,0),B=(2,0)，P=(2cosθ,2sinθ),θ∈[10°,170°]，固定Q=(0,5)。",
+    "config": {},
+    "researchConclusion": "∠APB=90°说明P在定圆；QP最小为3，在P=(0,2)可达。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型6 相切时取最值",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-58",
+    "topic": 5,
+    "title": "模块七 题型7 定角定高",
+    "group": "模块七",
+    "sourceRange": [
+      4358,
+      4369
+    ],
+    "methodRange": [
+      4147,
+      4152
+    ],
+    "conditions": "",
+    "wordMethod": "取直角三角形斜边中点，利用斜边中线及垂线最短；非直角用外接圆",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "height-right",
+    "sourceModel": "A=(0,2),l:y=0，B=(-t,0),C=(4/t,0),t>0，确保∠BAC=90°。",
+    "config": {},
+    "researchConclusion": "BC≥4，面积≥4，周长≥4+4√2，均t=2等腰时取等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型7 定角定高",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-59",
+    "topic": 5,
+    "title": "模块七 题型8 米勒角",
+    "group": "模块七",
+    "sourceRange": [
+      4407,
+      4408
+    ],
+    "methodRange": [
+      4153,
+      4163
+    ],
+    "conditions": "",
+    "wordMethod": "作过两定点的辅助圆，圆与动点轨迹相切时张角最大",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "miller",
+    "sourceModel": "正方形A=(0,0),B=(4,0),C=(4,4),D=(0,4)，M=(2,4)，P=(4,t),t∈[0,3.9]。",
+    "config": {},
+    "researchConclusion": "CP=√(CD×CM)=2√2，BP=4−2√2时角最大。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块七 / 模块七 题型8 米勒角",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-60",
+    "topic": 5,
+    "title": "模块八 题型1 铅垂高最值",
+    "group": "模块八",
+    "sourceRange": [
+      4530,
+      4533
+    ],
+    "methodRange": [
+      4426,
+      4463
+    ],
+    "conditions": "",
+    "wordMethod": "作平行y轴的铅垂线，将面积转换为固定水平底乘铅垂高",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "vertical-height",
+    "sourceModel": "抛物线y=−x²/2+x+4，A=(4,0),B=(0,4),C=(−2,0)，P=(t,f(t)),0<t<4，H=(t,4−t)。",
+    "config": {},
+    "researchConclusion": "PH=−(t−2)²/2+2，四边形PBCA面积=12+2PH≤16，t=2等号。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块八 / 模块八 题型1 铅垂高最值",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-61",
+    "topic": 5,
+    "title": "模块八 题型2 二次函数求最值",
+    "group": "模块八",
+    "sourceRange": [
+      4552,
+      4555
+    ],
+    "methodRange": [
+      4490,
+      4502
+    ],
+    "conditions": "",
+    "wordMethod": "相似表示长宽/高，再构造二次函数配方",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "quadratic",
+    "sourceModel": "A=(4,0),B=(0,4),C=(−2,0)，D=(4−6t,0),E=(4−4t,4t),0≤t≤1，DE∥BC。",
+    "config": {},
+    "researchConclusion": "S_BDE=12t(1−t)≤3，t=1/2时最大。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块八 / 模块八 题型2 二次函数求最值",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  },
+  {
+    "id": "t05-62",
+    "topic": 5,
+    "title": "模块八 题型3 几何构造求最值",
+    "group": "模块八",
+    "sourceRange": [
+      4586,
+      4589
+    ],
+    "methodRange": [
+      3173,
+      3180
+    ],
+    "conditions": "",
+    "wordMethod": "分别作两次对称，再连接像点，检验连线穿越两条边的顺序",
+    "sourceConclusion": "",
+    "sourceProof": [],
+    "flags": [],
+    "method": "double-reflection",
+    "sourceModel": "A=(0,0),B=(4,0),D=4(cos125°,sin125°),C为过B垂直AB的线与过D垂直AD的线的交点。M沿BC、N沿CD运动。",
+    "config": {},
+    "researchConclusion": "周长≥A1A2=2BD，像点连线确实经过两边内部；最优∠MAN=70°，符合原题只求角度。",
+    "topicName": "八类最值问题汇总",
+    "source": "《26届中考压轴题模型+方法（几何）》 / 专题05 / 模块八 / 模块八 题型3 几何构造求最值",
+    "scope": "画板聚焦本章的核心方法，可变参数用于观察结构中的不变量；原题中的全部特殊数值与多个小问，请在“Word 原例”中对照。画板与原题的点名或数值如有不同，以各自标注为准。"
+  }
+]
