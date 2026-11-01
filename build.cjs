@@ -10,7 +10,7 @@ fs.writeFileSync(path.join(__dirname,'dist/index.html'),html);console.log('Built
 
 const chapters=require('./src/chapters-data.json'),presets=require('./src/method-presets.cjs'),excerpts=require('./src/source-excerpts.json');
 for(const c of chapters){if(!presets[c.method]||!excerpts[c.id])throw Error('Incomplete chapter '+c.id)}
-const replacements={'/*MATH_CSS*/':css,'/*CHAPTER_CSS*/':fs.readFileSync('src/chapters.css','utf8')+numericCSS,'/*CHAPTER_DATA*/':JSON.stringify(walk(chapters)),'/*PRESETS*/':JSON.stringify(walk(presets)),'/*EXCERPTS*/':JSON.stringify(excerpts).replaceAll('</script','<\\/script'),'/*GEOMETRY*/':numericJS+'\n'+fs.readFileSync('src/method-geometry.js','utf8'),'/*CHAPTER_JS*/':fs.readFileSync('src/chapters-app.js','utf8')};
+const replacements={'/*MATH_CSS*/':css,'/*CHAPTER_CSS*/':fs.readFileSync('src/chapters.css','utf8')+fs.readFileSync('src/chapter-drawing.css','utf8')+numericCSS,'/*CHAPTER_DATA*/':JSON.stringify(walk(chapters)),'/*PRESETS*/':JSON.stringify(walk(presets)),'/*EXCERPTS*/':JSON.stringify(excerpts).replaceAll('</script','<\\/script'),'/*GEOMETRY*/':numericJS+'\n'+fs.readFileSync('src/method-geometry.js','utf8')+'\n'+fs.readFileSync('src/chapter-drawing.js','utf8'),'/*CHAPTER_JS*/':fs.readFileSync('src/chapters-workspace.js','utf8')};
 let chapterHtml=fs.readFileSync('src/chapters.template.html','utf8');for(const [key,value] of Object.entries(replacements))chapterHtml=chapterHtml.replace(key,()=>value);
 fs.writeFileSync('dist/chapters.html',chapterHtml);console.log('Built',chapters.length,'chapter experiments');
 
@@ -18,6 +18,8 @@ let legacy=old.replace(/<style id="numeric-input-style">[\s\S]*?<\/style>/g,'').
 legacy=legacy.replace('</head>',()=>'<style id="numeric-input-style">'+numericCSS+'</style></head>').replace('<script>',()=>'<script id="numeric-input-script">'+numericJS+'</script><script>');
 legacy=legacy.replace("$('height').value=h;NumericInput.sync($('height'),h);","$('height').value=h;").replace("$('height').value=h;","$('height').value=h;NumericInput.sync($('height'),h);");
 legacy=legacy.replace('</body>',()=>'<script id="numeric-input-legacy">NumericInput.attach(document.getElementById("height"),{label:"弦到圆心的距离 OM",get:()=>h,set:setH});</script></body>');
+legacy=legacy.replace(/<script id="complete-diagram-route">[\s\S]*?<\/script>/g,'');
+legacy=legacy.replace('</head>',()=>'<script id="complete-diagram-route">if(!new URLSearchParams(location.search).has("explore"))location.replace("construction.html#circle-distance");</script></head>');
 fs.writeFileSync(path.join(__dirname,'dist/circle-distance.html'),legacy);
 const drawingReplacements={'/*CONSTRUCTION_CSS*/':fs.readFileSync('src/construction.css','utf8')+numericCSS,'/*NUMERIC_JS*/':numericJS,'/*CONSTRUCTION_DATA*/':fs.readFileSync('src/construction-lessons.js','utf8'),'/*CONSTRUCTION_JS*/':fs.readFileSync('src/construction-app.js','utf8')};
 let drawingHtml=fs.readFileSync('src/construction.template.html','utf8');for(const [key,value] of Object.entries(drawingReplacements))drawingHtml=drawingHtml.replace(key,()=>value);
