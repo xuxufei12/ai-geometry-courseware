@@ -2,14 +2,18 @@
   "name": "ai-geometry-courseware",
   "version": "1.0.0",
   "private": true,
-  "description": "Interactive Chinese geometry lessons for noncommercial education",
+  "description": "Interactive Chinese geometry and geography experiments for noncommercial education",
   "scripts": {
-    "build": "node build.cjs",
-    "test": "node tests/geometry.cjs && node tests/chapters.cjs && node tests/numeric-input.cjs && node tests/construction.cjs",
-    "test:browser": "node tests/construction-browser.cjs"
+    "build": "node build.cjs && node build-geography.cjs",
+    "build:geography": "node build-geography.cjs",
+    "test": "node tests/geometry.cjs && node tests/chapters.cjs && node tests/numeric-input.cjs && node tests/construction.cjs && node tests/geography.cjs",
+    "test:browser": "node tests/construction-browser.cjs",
+    "test:geography:browser": "node tests/geography-browser.cjs"
   },
   "devDependencies": {
     "@playwright/test": "1.64.1",
-    "katex": "0.19.0"
+    "esbuild": "0.25.11",
+    "katex": "0.19.0",
+    "three": "0.180.0"
   }
 }

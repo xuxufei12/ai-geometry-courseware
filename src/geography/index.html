@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#173d52"><meta name="description" content="10 个高中地理交互实验：亲手改变条件，观察地球、天气、水与土地的变化，用记录解释原理。可离线使用。"><title>地理实验室 · 把世界放在手中</title><style>/*STYLE*/</style></head>
+<body>
+<header class="topbar"><a class="brand" href="geography.html"><span class="brand-mark">◎</span><span>地理实验室<small>把世界放在手中</small></span></a><nav aria-label="学科导航"><a href="index.html">几何实验室</a><button id="notebook-link">我的观察记录 <span id="total-records">0</span></button></nav></header>
+<div class="page-layout">
+ <aside class="curriculum"><div class="curriculum-head"><span>高中地理</span><span class="course-count">10 个实验</span></div><p class="rail-intro">从一次小小的操作，<br>看懂世界如何运转。</p><nav id="lesson-nav" aria-label="选择实验"></nav><div class="rail-bottom"><span class="offline-dot"></span>支持离线 · 无需账号<p>学习记录只保存在此浏览器</p><a href="LICENSE">非商业教学与学习</a></div></aside>
+ <main>
+  <div class="lesson-heading"><div><p id="book" class="book"></p><h1 id="lesson-name">海风从哪里来</h1><p id="question" class="question"></p></div><span class="lesson-index" id="lesson-index"></span></div>
+  <div class="lab-shell" id="lab-shell">
+   <section class="scene-panel" aria-label="交互实验台"><div class="scene-toolbar"><span><i class="live-dot"></i>三维实验台</span><div><button id="labels" aria-pressed="true">标注</button><button id="fullscreen">全屏</button></div></div><div id="scene"><div class="scene-loading" id="scene-loading">正在准备实验场景…</div><div id="fallback" hidden><h2>当前设备未能启动三维显示</h2><p>仍可调节参数、查看下方图表并完成实验。若要查看三维模型，请使用支持 WebGL 2 的浏览器并开启硬件加速。</p></div></div><div class="scene-bottom"><span id="scene-hint">拖动旋转 · 滚轮缩放</span><div class="view-controls" aria-label="调整视角"><button data-view="perspective" aria-label="恢复立体视角">立体</button><button data-view="front" aria-label="切换正面视角">正面</button><button data-view="top" aria-label="切换俯视视角">俯视</button></div></div><div id="legend" class="legend"></div></section>
+   <aside class="control-panel"><div class="panel-title"><h2>改变条件</h2><button id="reset" class="text-button">重置参数</button></div><p class="control-help">每次只改变一个条件，比较现象。</p><div id="controls"></div><div class="presets-label">试试这些情景</div><div id="presets" class="presets"></div><div class="playback"><button id="play" class="primary">▶ 播放过程</button><button id="record" class="secondary">＋ 记录此刻</button></div><p id="play-hint" class="play-hint"></p><div class="compare-box"><span>对照实验</span><button id="baseline">设为对照</button><button id="restore-baseline" disabled>恢复对照</button></div><p id="baseline-hint">先保存一组条件，再改变其中一个变量。</p></aside>
+  </div>
+  <section id="metrics" class="metrics" aria-label="实时观察数据"></section>
+  <div class="analysis-grid"><section class="chart-panel"><div class="panel-title"><h2 id="chart-title">现象随条件变化</h2><span class="chart-tag">与模型同步</span></div><svg id="chart" viewBox="0 0 600 190" role="img" aria-label="实验数据图"></svg><p id="chart-caption"></p></section><section class="mission-panel"><div class="panel-title"><h2>这次，试着发现</h2><span>探究任务</span></div><ol id="tasks"></ol><details class="model-boundary"><summary>这个模型怎样简化了真实世界？</summary><p id="boundary"></p></details></section></div>
+  <section class="inquiry"><nav class="inquiry-tabs" aria-label="探究步骤"><button class="active" data-tab="predict" aria-selected="true">1 提出预测</button><button data-tab="records" aria-selected="false">2 观察与记录 <span id="record-count">0</span></button><button data-tab="explain" aria-selected="false">3 理解与迁移</button></nav>
+   <div id="tab-predict" class="tab-panel"><div><p class="section-kicker">先保留你的想法</p><h2 id="prediction-question"></h2><div id="prediction-options" class="answer-options"></div><p id="prediction-feedback" class="feedback" aria-live="polite"></p></div><aside class="thinking-note"><span>探究提示</span><p>结果与预测不同，也是一种发现。<br>先记录证据，再寻找原因。</p><button id="go-records">去记录现象</button></aside></div>
+   <div id="tab-records" class="tab-panel" hidden><div class="record-heading"><div><h2>我的观察记录</h2><p>每课最多保存 12 组不同条件，可导出留作实验报告。</p></div><div><button id="export">导出 CSV</button><button id="clear-records">清空本课记录</button></div></div><div class="table-wrap"><table><thead id="record-head"></thead><tbody id="record-body"></tbody></table></div><p id="empty-records">还没有记录。调整上方参数，然后点击“记录此刻”。</p><label class="notes-label" for="notes">我的解释：改变了什么？看到了什么？为什么？</label><textarea id="notes" rows="3" maxlength="3000" placeholder="例如：我保持热力差异不变，只改变时刻，发现……"></textarea><p id="save-status" class="save-status"></p></div>
+   <div id="tab-explain" class="tab-panel" hidden><div class="explanation"><h2>现象背后的原理</h2><p id="evidence-hint"></p><ol id="principles"></ol><div id="formula" class="formula"></div></div><div class="transfer"><h3>换一个条件，还能解释吗？</h3><p id="transfer-question"></p><div id="transfer-options" class="answer-options"></div><p id="transfer-feedback" class="feedback" aria-live="polite"></p></div></div>
+  </section>
+  <footer><span>地理实验室 · 用观察支持解释</span><span>10 个高中核心实验 · <a href="https://github.com/xuxufei12/ai-geometry-courseware">查看项目</a> · <a href="LICENSE">禁止商用</a></span></footer>
+ </main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>/*APP*/</script>
+</body></html>
