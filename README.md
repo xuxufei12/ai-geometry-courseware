@@ -31,6 +31,18 @@
 
 **维护：**源码在 `src/geography/`，模型函数与场景、课程数据、界面相互分离。运行 `npm run build:geography` 单独构建，或 `npm run build` 构建全部课程。`npm test` 包含数值不变量测试；`npm run test:geography:browser` 使用本机 Chrome 检查十课操作、对照、记录持久化、导出、手机布局、离线请求与 WebGL 降级。截图输出到被 Git 忽略的 `.geography-qa/`。
 
+### 开源建模参考与实现
+
+| 参考项目 | 借鉴的处理方式 | 本课件的实现 |
+| --- | --- | --- |
+| [Three.js Water2（MIT）](https://github.com/mrdoob/three.js/blob/r180/examples/jsm/objects/Water2.js) | 流动法线与水面反光 | 独立编写轻量水材质，加入浅滩渐变、岸线泡沫与随播放推进的波纹；未移植完整反射/折射渲染管线 |
+| [THREE.Terrain（MIT）](https://github.com/IceCreamYou/THREE.Terrain) · [演示](https://icecreamyou.github.io/THREE.Terrain/) | 按海拔、坡度混合地表材质，确定性植被分布 | 地表颜色结合坡度与细节噪声；海岸与水面共用边界；树木形态与位置可重复，参数变化不会随机重置景观 |
+| [Bruno Simon Folio 2019（MIT）](https://github.com/brunosimon/folio-2019) · [演示](https://2019.bruno-simon.com/) | 模型式场景、物体轮廓、接触阴影与空间层次 | 细化树冠、树干、屋顶、门窗、码头和地层剖面，保留清晰的教学箭头和可旋转视角 |
+
+场景几何及 `scenery.js` 中的材质独立编写，未复制上述项目的模型或整套源码。实际使用的 Three.js 引擎、工具模块和地球纹理列于 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)。地球增加法线和海陆高光贴图；重复树木、建筑、作物合并绘制，农田点击目标保持独立。水稻、小麦、茶树使用不同几何形态。
+
+景观细节用于帮助辨认场景，不代表实际勘测；表层波纹不用于判断风向，岩层不代表当地地质剖面，植物形态不表示真实生长模拟。气流方向以箭头与参数为准。波纹随学生点击播放才推进，暂停时保持静止。新增纹理仍内嵌在单文件页面中，离线可用。
+
 ## 完整示范与亲手作图
 
 六个完整例题和131章均采用“先看完整动态图 → 关闭示范亲手作图 → 改变参数验证 → 解释方法”的流程。

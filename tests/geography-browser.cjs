@@ -21,6 +21,14 @@ const artifact=process.env.GEO_QA_DIR||path.join(__dirname,'../.geography-qa');f
  }
  await page.locator('[data-lesson="farm"]').click();await page.locator('#input-parcel').selectOption('2');await page.waitForTimeout(300);const canvas=page.locator('#scene canvas'),bounds=await canvas.boundingBox();let picked=false;for(const [x,y] of [[.28,.53],[.4,.55],[.55,.6],[.7,.55],[.5,.45],[.4,.45],[.7,.4]]){await canvas.click({position:{x:bounds.width*x,y:bounds.height*y}});await page.waitForTimeout(150);if(await page.locator('#input-parcel').inputValue()!=='2'){picked=true;break;}}assert.ok(picked,'clicking a field must select a parcel');
  const imageBefore=await canvas.screenshot();await page.mouse.move(bounds.x+bounds.width*.5,bounds.y+bounds.height*.5);await page.mouse.down();await page.mouse.move(bounds.x+bounds.width*.65,bounds.y+bounds.height*.58,{steps:8});await page.mouse.up();await page.waitForTimeout(400);assert.ok(!(await canvas.screenshot()).equals(imageBefore),'dragging rotates the model');
+ // New crop geometry must track the selected plan, including after repeated rebuilding.
+ await page.locator('[data-view="perspective"]').click();await page.waitForTimeout(700);const cropImages=[];
+ for(const crop of ['0','1','2']){await page.locator('#input-crop').selectOption(crop);await page.waitForTimeout(300);cropImages.push(await canvas.screenshot());}
+ assert.ok(!cropImages[0].equals(cropImages[1])&&!cropImages[1].equals(cropImages[2]),'rice, wheat and tea must have distinct models');
+ await page.locator('[data-lesson="breeze"]').click();await page.locator('[data-preset="0"]').click();await page.waitForTimeout(1000);
+ const pausedWater=await canvas.screenshot();await page.waitForTimeout(350);assert.ok((await canvas.screenshot()).equals(pausedWater),'water and scenery must remain still while paused');
+ await page.locator('#play').click();await page.waitForTimeout(700);await page.locator('#play').click();await page.waitForTimeout(400);assert.ok(!(await canvas.screenshot()).equals(pausedWater),'playing must visibly advance the experiment');
+ const stoppedWater=await canvas.screenshot();await page.waitForTimeout(350);assert.ok((await canvas.screenshot()).equals(stoppedWater),'pausing must freeze animated water again');
  await page.locator('[data-lesson="orbit"]').click();const day=await page.locator('#number-day').inputValue();await page.locator('#play').click();await page.waitForTimeout(650);await page.locator('#play').click();assert.notEqual(await page.locator('#number-day').inputValue(),day);
  await page.locator('#number-day').fill('9999');await page.locator('#number-day').blur();assert.ok(Number(await page.locator('#number-day').inputValue())<=365);
  await page.reload();await page.waitForTimeout(500);await page.locator('[data-tab="records"]').click();assert.equal(await page.locator('#record-body tr').count(),2);assert.equal(await page.locator('#notes').inputValue(),'我改变一个条件并记录现象。');
