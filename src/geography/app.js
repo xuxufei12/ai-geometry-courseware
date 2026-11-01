@@ -1,12 +1,13 @@
 import {lessons,initial} from './lessons.js';
 import {values,metrics,solar,clamp} from './models.js';
 import {GeoScene} from './scene.js';
+import {BookIntro} from './book-intro.js';
 const $=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const key='geography-lab-v1';let saved={},storageOK=true;
 try{saved=JSON.parse(localStorage.getItem(key)||'{}');if(!saved||typeof saved!=='object'||Array.isArray(saved))saved={};}catch{saved={};storageOK=false;}
 for(const l of lessons){const old=saved[l.id]||{};saved[l.id]={records:Array.isArray(old.records)?old.records.filter(r=>r&&r.state&&typeof r.state==='object'&&Array.isArray(r.metrics)).slice(0,12):[],notes:typeof old.notes==='string'?old.notes.slice(0,3000):'',prediction:Number.isInteger(old.prediction)?old.prediction:null,complete:old.complete===true};}
-let lesson,state,scene,playing=false,baseline=null,showLabels=true,tab='predict',toastTimer,previousTime=0,lastModel=0;
+let lesson,state,scene,bookIntro,playing=false,baseline=null,showLabels=true,tab='predict',toastTimer,previousTime=0,lastModel=0;
 function persist(){try{localStorage.setItem(key,JSON.stringify(saved));storageOK=true;}catch{storageOK=false;} $('save-status').textContent=storageOK?'已保存在当前浏览器；导出 CSV 可另外备份。':'此浏览器不能保存本地记录，请在离开前导出 CSV。';}
 function toast(message){$('toast').textContent=message;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),3200);}
 function renderNav(){const i=lessons.indexOf(lesson);$('lesson-nav').innerHTML=lessons.map((l,n)=>`<button class="lesson-nav-item ${l.id===lesson.id?'active':''}" data-lesson="${l.id}" ${l.id===lesson.id?'aria-current="page"':''}><span class="nav-number">${String(n+1).padStart(2,'0')}</span><span><strong>${l.name}</strong><small>${l.topic}</small></span>${saved[l.id].complete?'<span class="nav-done" aria-label="已通过迁移题">✓</span>':''}</button>`).join('');$('lesson-index').textContent=String(i+1).padStart(2,'0')+' / 10';$('total-records').textContent=Object.values(saved).reduce((n,x)=>n+x.records.length,0);}
@@ -18,17 +19,17 @@ function setupControls(){ $('controls').innerHTML=lesson.controls.map(c=>{
  $('play-hint').textContent=lesson.animate?'播放会推进时间或过程；调参数后自动暂停。':'播放展示水流与物质运动，参数保持不变。';
 }
 function syncControls(){for(const c of lesson.controls){$('input-'+c.key).value=state[c.key];if(!c.options)$('number-'+c.key).value=Number(state[c.key].toFixed(2));}}
-function setPlaying(on){playing=on;$('play').textContent=on?'Ⅱ 暂停观察':'▶ 播放过程';$('play').setAttribute('aria-pressed',String(on));}
+function setPlaying(on){if(on)bookIntro?.cancel();playing=on;$('play').textContent=on?'Ⅱ 暂停观察':'▶ 播放过程';$('play').setAttribute('aria-pressed',String(on));}
 let renderPending=false;
 function update(){syncControls();const list=metrics(lesson.id,state),base=baseline?metrics(lesson.id,baseline):null;
  $('metrics').innerHTML=list.map((m,i)=>`<div class="metric"><div class="metric-label">${m.label}</div><div class="metric-value ${isNaN(Number(m.value))?'text-value':''}">${esc(m.value)}<span class="metric-unit">${m.unit}</span></div>${base?`<div class="metric-diff">对照：${esc(base[i].value)} ${base[i].unit}</div>`:''}</div>`).join('');
  chart();if(!renderPending){renderPending=true;requestAnimationFrame(()=>{renderPending=false;if(scene){try{scene.build(lesson.id,state);scene.setLabels(showLabels);}catch(e){console.error(e);toast('三维场景未能更新，图表与数据仍可操作。');}}});}
 }
-function select(id){lesson=lessons.find(l=>l.id===id)||lessons[0];state=initial(lesson);
+function select(id){bookIntro?.cancel();lesson=lessons.find(l=>l.id===id)||lessons[0];state=initial(lesson);$('scene').closest('.scene-panel').classList.toggle('front-lesson',lesson.id==='front');
  baseline=null;setPlaying(false);$('restore-baseline').disabled=true;$('baseline-hint').textContent='先保存一组条件，再改变其中一个变量。';renderNav();$('book').textContent=lesson.book;$('lesson-name').textContent=lesson.name;$('question').textContent=lesson.question;
  document.title=lesson.topic+' · 地理实验室';$('tasks').innerHTML=lesson.tasks.map(t=>`<li>${t}</li>`).join('');$('boundary').textContent=lesson.boundary;$('legend').innerHTML=lesson.legend.map(([color,t])=>`<span><i style="background:${color}"></i>${t}</span>`).join('');$('scene-hint').textContent=lesson.id==='farm'?'点击地块选择 · 拖动旋转 · 滚轮缩放':'拖动旋转 · 滚轮缩放';
  setupControls();$('notes').value=saved[lesson.id].notes;renderPrediction();renderRecords();$('principles').innerHTML=lesson.principle.map(t=>`<li>${t}</li>`).join('');$('formula').textContent=lesson.formula;$('transfer-question').textContent=lesson.transfer.q;$('transfer-options').innerHTML=lesson.transfer.options.map((t,i)=>`<button data-transfer="${i}">${t}</button>`).join('');$('transfer-feedback').textContent=saved[lesson.id].complete?'你已完成这课的迁移题，可以继续比较新的条件。':'';
- switchTab('predict');update();if(location.hash.slice(1)!==lesson.id)history.replaceState(null,'','#'+lesson.id);persist();}
+ switchTab('predict');update();bookIntro?.setLesson(lesson.id);if(location.hash.slice(1)!==lesson.id)history.replaceState(null,'','#'+lesson.id);persist();}
 function renderPrediction(){const p=saved[lesson.id].prediction;$('prediction-question').textContent=lesson.prediction.q;$('prediction-options').innerHTML=lesson.prediction.options.map((t,i)=>`<button data-predict="${i}" class="${p===i?'selected':''}" aria-pressed="${p===i}">${t}</button>`).join('');$('prediction-feedback').textContent=p===null?'': '已保留你的预测。改变条件、记录证据，再回来解释。';}
 function switchTab(next){tab=next;for(const t of ['predict','records','explain']){$('tab-'+t).hidden=t!==next;}document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===next);b.setAttribute('aria-selected',String(b.dataset.tab===next));});const n=saved[lesson.id].records.length;$('evidence-hint').textContent=n>=2?`你已保存 ${n} 组观察。把下面的解释与自己的记录对照。`:'建议先记录至少两组不同条件，再把解释与观察结果对照。';}
 function renderRecords(){const records=saved[lesson.id].records;$('record-count').textContent=records.length;$('empty-records').hidden=records.length>0;
@@ -59,29 +60,30 @@ function chart(){const id=lesson.id,d=values(id,state),W=600,H=190;let body='',t
 }
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
  if(b.dataset.lesson){location.hash=b.dataset.lesson;if(b.dataset.lesson===lesson.id)select(lesson.id);}
- if(b.dataset.preset!==undefined){setPlaying(false);Object.assign(state,lesson.presets[Number(b.dataset.preset)][1]);update();}
- if(b.dataset.view&&scene)scene.view(b.dataset.view);
+ if(b.dataset.preset!==undefined){bookIntro?.cancel();setPlaying(false);Object.assign(state,lesson.presets[Number(b.dataset.preset)][1]);update();}
+ if(b.dataset.view&&scene){bookIntro?.cancel();scene.view(b.dataset.view);}
  if(b.dataset.tab)switchTab(b.dataset.tab);
  if(b.dataset.predict!==undefined){saved[lesson.id].prediction=Number(b.dataset.predict);persist();renderPrediction();}
  if(b.dataset.transfer!==undefined){const answer=Number(b.dataset.transfer),correct=answer===lesson.transfer.answer;b.classList.add(correct?'correct':'incorrect');$('transfer-feedback').textContent=(correct?'解释正确。':'再想一想。')+lesson.transfer.why;if(correct){saved[lesson.id].complete=true;persist();renderNav();}}
 });
-$('controls').addEventListener('input',e=>{const k=e.target.dataset.key;if(!k)return;state[k]=Number(e.target.value);setPlaying(false);update();});
-$('controls').addEventListener('change',e=>{const k=e.target.dataset.number;if(!k)return;const c=lesson.controls.find(x=>x.key===k),n=Number(e.target.value);if(e.target.value.trim()===''||!Number.isFinite(n)||n<c.min||n>c.max){toast(`请输入 ${c.min} 到 ${c.max} 之间的数值。`);syncControls();return;}state[k]=n;setPlaying(false);update();});
+$('controls').addEventListener('input',e=>{const k=e.target.dataset.key;if(!k)return;bookIntro?.cancel();state[k]=Number(e.target.value);setPlaying(false);update();});
+$('controls').addEventListener('change',e=>{const k=e.target.dataset.number;if(!k)return;const c=lesson.controls.find(x=>x.key===k),n=Number(e.target.value);if(e.target.value.trim()===''||!Number.isFinite(n)||n<c.min||n>c.max){toast(`请输入 ${c.min} 到 ${c.max} 之间的数值。`);syncControls();return;}bookIntro?.cancel();state[k]=n;setPlaying(false);update();});
 $('play').onclick=()=>setPlaying(!playing);
-$('reset').onclick=()=>{state=initial(lesson);setPlaying(false);update();toast('参数已重置，观察记录仍保留。');};
-$('record').onclick=record;$('baseline').onclick=()=>{baseline={...state};$('restore-baseline').disabled=false;$('baseline-hint').textContent='对照已保存。改变参数后，数据栏会显示原始数值。';update();};
-$('restore-baseline').onclick=()=>{if(baseline){state={...baseline};setPlaying(false);update();}};
+$('reset').onclick=()=>{bookIntro?.cancel();state=initial(lesson);setPlaying(false);update();toast('参数已重置，观察记录仍保留。');};
+$('record').onclick=record;$('baseline').onclick=()=>{bookIntro?.cancel();baseline={...state};$('restore-baseline').disabled=false;$('baseline-hint').textContent='对照已保存。改变参数后，数据栏会显示原始数值。';update();};
+$('restore-baseline').onclick=()=>{bookIntro?.cancel();if(baseline){state={...baseline};setPlaying(false);update();}};
 $('labels').onclick=()=>{showLabels=!showLabels;$('labels').setAttribute('aria-pressed',String(showLabels));scene?.setLabels(showLabels);};
-$('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if($('lab-shell').requestFullscreen)await $('lab-shell').requestFullscreen();else toast('当前浏览器不支持全屏，可使用浏览器缩放。');}catch{toast('当前浏览器无法进入全屏，可继续在页面中操作。');}};
+$('fullscreen').onclick=async()=>{bookIntro?.cancel();try{if(document.fullscreenElement)await document.exitFullscreen();else if($('lab-shell').requestFullscreen)await $('lab-shell').requestFullscreen();else toast('当前浏览器不支持全屏，可使用浏览器缩放。');}catch{toast('当前浏览器无法进入全屏，可继续在页面中操作。');}};
 $('go-records').onclick=()=>switchTab('records');$('notebook-link').onclick=()=>{switchTab('records');$('tab-records').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});};
 $('clear-records').onclick=()=>{if(!saved[lesson.id].records.length)return;if(confirm('清空本课观察记录？自己的解释和其他课程记录会保留。')){saved[lesson.id].records=[];persist();renderRecords();toast('本课记录已清空。');}};
 $('export').onclick=exportCSV;$('notes').addEventListener('input',()=>{saved[lesson.id].notes=$('notes').value;persist();});
 window.addEventListener('hashchange',()=>select(location.hash.slice(1)));
-document.addEventListener('visibilitychange',()=>{if(document.hidden)setPlaying(false);});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){setPlaying(false);if(['opening','lifting'].includes(bookIntro?.element.dataset.stage))bookIntro.cancel();}});
 try{scene=new GeoScene($('scene'),parcel=>{if(lesson.id==='farm'){state.parcel=parcel;setPlaying(false);update();toast('已选择：'+lesson.controls[0].options[parcel]);}});}catch(e){console.warn('WebGL unavailable:',e.message);$('fallback').hidden=false;}
+bookIntro=new BookIntro($('scene'),{pause:()=>setPlaying(false),has3D:()=>Boolean(scene),prepare:type=>{state.type=type;state.position=0;state.moisture=75;setPlaying(false);update();},reveal:t=>scene?.setFrontReveal(t),finish:()=>{toast('插图已展开。拖动旋转模型，或推进锋面观察测站天气。');$('book-replay').focus({preventScroll:true});}});
 $('scene-loading').hidden=true;select(location.hash.slice(1));
 function frame(now){const dt=previousTime?Math.min((now-previousTime)/1000,.1):0;previousTime=now;
  if(playing&&lesson.animate&&now-lastModel>180){const c=lesson.controls.find(x=>x.key===lesson.animate);let n=state[c.key]+lesson.speed*.18;if(n>c.max)n=c.min;state[c.key]=n;update();lastModel=now;}
- if(scene)scene.tick(dt,playing);requestAnimationFrame(frame);
+ if(scene&&(!bookIntro?.active||bookIntro.element.dataset.stage==='lifting'))scene.tick(dt,playing);requestAnimationFrame(frame);
 }requestAnimationFrame(frame);
 window.addEventListener('pagehide',()=>{persist();});

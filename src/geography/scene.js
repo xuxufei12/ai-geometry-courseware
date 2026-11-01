@@ -7,6 +7,7 @@ import specularURL from '../../assets/geography/earth-specular.jpg';
 import {Scenery,coast,grain,waterMaterial,geologyMaterial} from './scenery.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+import {FrontClouds} from './cloud-volume.js';
 
 const C={water:0x368ba7,land:0x87a98a,rock:0xa48a72,sand:0xd3b88a,warm:0xf2b766,cool:0x66c6e4,ink:0x153c50};
 const v=(x,y,z)=>new T.Vector3(x,y,z);
@@ -74,7 +75,7 @@ export class GeoScene {
   return this.mesh(g,0xffffff,this.root,{vertexColors:true});}
  ribbon(fn,width,color,y=.08){const vs=[],ix=[],uv=[];const count=120;for(let i=0;i<=count;i++){const x=-5+i/12;const z=fn(x);const w=typeof width==='function'?width(x):width,h=typeof y==='function'?y(x):y;vs.push(x,h,z-w,x,h,z+w);uv.push(i/count,0,i/count,1);if(i<count){const j=i*2;ix.push(j,j+2,j+1,j+1,j+2,j+3);}}
   const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(vs,3));g.setIndex(ix);g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.computeVertexNormals();return this.waterSurface(g,{river:true});}
- reset(){const geometries=new Set(),materials=new Set(),textures=new Set();this.root.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)for(const m of [].concat(o.material)){materials.add(m);if(m.map&&m.map!==this.earthMap)textures.add(m.map);}});for(const g of geometries)g.dispose();for(const m of materials)m.dispose();for(const t of textures)t.dispose();this.root.clear();this.paths=[];this.labels=[];this.pickables=[];}
+ reset(){const geometries=new Set(),materials=new Set(),textures=new Set();this.root.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)for(const m of [].concat(o.material)){materials.add(m);if(m.map&&m.map!==this.earthMap)textures.add(m.map);}});for(const g of geometries)g.dispose();for(const m of materials)m.dispose();for(const t of textures)t.dispose();this.root.clear();this.root.scale.set(1,1,1);this.controls.enabled=true;this.rainDrops=null;this.paths=[];this.labels=[];this.pickables=[];}
  build(id,s){const changed=id!==this.id;this.id=id;this.state=s;this.reset();this.ambient.intensity=1.2;this.sun.intensity=2.6;this.sun.color.set(0xffedcf);this.sun.position.set(-4,10,6);this.sun.target.position.set(0,0,0);
   if(id==='breeze')this.breeze(s);else if(id==='orbit'||id==='daylight')this.earth(s);else if(id==='shadow')this.shadow(s);else if(id==='front')this.front(s);else if(id==='circulation')this.circulation(s);else if(id==='water')this.water(s);else if(id==='river')this.river(s);else if(id==='farm')this.farm(s);else if(id==='basin')this.basin(s);
   this.scenery.flush(this.root);if(changed)this.view('perspective');this.tick(0,false);
@@ -132,18 +133,29 @@ export class GeoScene {
   this.label('前楼 · '+s.height+' m',-1.7,h+.5,-2);this.label('后楼底部',1.6,.7,-2+gap);this.label('间距 '+s.gap+' m',2,.5,-2+gap/2,'#f8d18a',1);
   this.label('南',0,.4,-3.3,'#c8e9f2',.65);this.label('北',0,.4,3.3,'#c8e9f2',.65);
  }
- front(s){this.platform();this.box(0,0,0,10,.1,7,0x91ad93);const x=s.position*.65,cold=s.type===0;
-  // Side profiles: cold air behind a cold front, ahead of a warm front moving right.
-  const shape=new T.Shape();if(cold){shape.moveTo(-5,0);shape.lineTo(x,0);shape.lineTo(x-2.2,3);shape.lineTo(-5,3);}else{shape.moveTo(x,0);shape.lineTo(5,0);shape.lineTo(5,3);shape.lineTo(x+4.3,3);}shape.closePath();
-  const g=new T.ExtrudeGeometry(shape,{depth:3.7,bevelEnabled:false});const m=this.mesh(g,C.cool,this.root,{transparent:true,opacity:.3,depthWrite:false,side:T.DoubleSide});m.position.set(0,.2,-1.85);
-  const boundary=[v(x,.21,1.9),v(x+(cold?-2.2:4.3),3.2,1.9)];this.line(boundary,0xd3f1ff,2);
-  this.box(x,.17,0,.055,.04,5.5,cold?0x5cc3ed:0xf0a164);
-  this.house(0,2.2,.12,.7);this.box(0,1.2,1.9,.04,2.2,.04,0xe3eef0);this.label('固定测站',0,2.7,2.2,'#ffffff',1.05);
-  this.label(cold?'冷气团推进':'暖空气爬升',cold?-3: -2,3.7,-1,'#b9eafa');this.label(cold?'暖空气被迫抬升':'前方冷气团',cold?2.9:3.3,3.7,-1,'#ffe0a2');
-  const lift=cold?[v(x+1,.5,-.1),v(x+.2,1,-.1),v(x-1.6,3,-.1)]:[v(x-2,.5,-.1),v(x+.2,1,-.1),v(x+3.4,3,-.1)];this.flow(lift,C.warm,14,.1,false);
-  const rainX=x+(cold?-.8:1.2);if(s.moisture>0){this.cloud(rainX,3.3,0,1);for(let j=0;j<20;j++){const px=rainX+(j%5-2)*.2,pz=-1+(j%4)*.5;this.flow([v(px,2.8,pz),v(px-.1,.25,pz)],0x8cdbf3,2,.25*s.moisture/100,false);}}
-  this.arrow(v(-4.3,.35,2.6),v(-2.7,.35,2.6),0xffffff);
+ front(s){this.platform();this.rainDrops=null;const cold=s.type===0,x=(cold?1:-1)*s.position*.65,run=cold?2.2:4.7;
+  this.box(0,0,0,10,.1,7,0x91ad93);
+  const profile=Array.from({length:33},(_,i)=>{const t=i/32;return [Math.max(-5,x-run*Math.pow(t,.7)),.15+t*3.3];});
+  const coldShape=new T.Shape();coldShape.moveTo(-5,.15);coldShape.lineTo(x,.15);for(const [px,py] of profile.slice(1))coldShape.lineTo(px,py);coldShape.lineTo(-5,3.45);coldShape.closePath();
+  const cool=this.mesh(new T.ExtrudeGeometry(coldShape,{depth:3.4,bevelEnabled:false}),C.cool,this.root,{transparent:true,opacity:.23,depthWrite:false,side:T.DoubleSide});cool.position.z=-1.7;cool.castShadow=false;
+  this.line(profile.map(([px,py])=>v(px,py,1.73)),0xbde8f3,2);
+  this.box(x,.17,0,.055,.04,5.2,cold?0x5cc3ed:0xf0a164);
+  for(let z=-1.8;z<2;z+=.65){
+   if(cold){const marker=this.mesh(new T.ConeGeometry(.15,.27,3),0x4c9fcb);marker.rotation.z=-Math.PI/2;marker.position.set(x+.1,.21,z);}
+   else{const marker=this.mesh(new T.SphereGeometry(.15,12,8,0,Math.PI),0xe99165);marker.rotation.y=-Math.PI/2;marker.scale.y=.3;marker.position.set(x-.1,.19,z);}
+  }
+  const lift=[v(x+1.4,.6,.25),v(x+.05,.95,.25),v(Math.max(-4.4,x-run*.55),2.8,.25),v(Math.max(-4.6,x-run*.85),3.5,.25)];this.flow(lift,C.warm,16,.1,false);
+  if(cold)this.arrow(v(-4.3,.55,1.4),v(-2.9,.55,1.4),0x83d1e5);else this.arrow(v(3.9,1.4,1.4),v(2.5,1.4,1.4),C.warm);
+  this.house(0,2.4,.12,.8);this.box(0,1.1,2.2,.035,1.8,.035,0xe3eef0);this.label('固定测站',0,2.3,2.7,'#ffffff',.9);
+  this.label('冷气团',-3.6,.8,2.1,'#b9eafa');this.label('暖气团',3.7,2.5,-.8,'#ffe0a2');this.label(cold?'冷空气推进 →':'← 暖空气推进',0,.4,3.4,cold?'#b9eafa':'#ffe0a2',.8);
+  if(s.moisture>0){
+   this.frontClouds??=new FrontClouds();const cloud=this.frontClouds.mesh(!cold,s.moisture);cloud.position.set(x-(cold?.8:1.35),cold?2.9:2.55,0);cloud.scale.set(cold?3.4:4.7,cold?2.3:1.25,3.05);if(!cold)cloud.rotation.z=-.2;this.root.add(cloud);
+   const width=cold?1.625:2.275,count=Math.round(s.moisture*(cold?1.7:1.2)),positions=new Float32Array(count*6),drops=[];
+   for(let i=0;i<count;i++){const f=((i*73)%count+.5)/count,px=x-width*f,pz=Math.sin(i*12.9898)*1.35;drops.push({x:px,z:pz,offset:(i*.6180339)%1,top:(cold?2.7:2.1)+f*.35});}
+   const geometry=new T.BufferGeometry();geometry.setAttribute('position',new T.BufferAttribute(positions,3));const rain=new T.LineSegments(geometry,new T.LineBasicMaterial({color:0xb3e2f5,transparent:true,opacity:.55,depthWrite:false}));rain.frustumCulled=false;this.root.add(rain);this.rainDrops={geometry,drops};
+  }
  }
+ setFrontReveal(t){if(this.id!=='front')return;this.root.scale.z=.025+.975*t;const fit=this.fitScale||1;this.controls.target.set(0,1,0);this.camera.position.set(8.5*t,3+5*t,16-5*t).sub(this.controls.target).multiplyScalar(fit).add(this.controls.target);this.controls.enabled=t>=1;this.root.traverse(o=>{if(o.userData.frontCloud)o.material.uniforms.reveal.value=.15+.85*t;});this.controls.update();}
  circulation(s){this.sun.color.set(0xffedcf);const globe=this.mesh(new T.SphereGeometry(1.9,64,48),0xffffff);globe.material.map=this.earthMap;globe.material.needsUpdate=true;const shift=s.season*12;
   for(const lat of [-60,-30,0,30,60])this.latitude(this.root,clamp(lat+shift,-85,85),lat===0?C.warm:C.cool,.75);
   this.latitude(this.root,s.lat,0xffffff,1);
@@ -217,7 +229,7 @@ export class GeoScene {
   for(let i=0;i<12;i++){const x=3.8+i%3*.35,z=-2.6+Math.floor(i/3)*.5;this.tree(x,z,height(x,z),.55);}
   this.house(4,2,height(4,2),.65);this.label('上游入库',-3.7,2,-.5);this.label('水库',-1.5,2,0);this.label('农业取水',2,1.4,2.4);this.label('下游生态',4,1.7,-1.4);
  }
- tick(dt,playing){if(playing)this.time+=Math.min(dt,.06);this.waterClock.value=this.time;for(const path of this.paths){path.particles.forEach((p,i)=>{const t=(i/path.particles.length+this.time*path.speed)%1;p.position.copy(path.curve.getPoint(t));});}this.controls.update();for(const l of this.labels){const distance=this.camera.position.distanceTo(l.position);const h=2*Math.tan(this.camera.fov*Math.PI/360)*distance/Math.max(1,this.container.clientHeight)*l.userData.labelPixels;l.scale.set(h*l.userData.labelRatio,h,1);}this.renderer.render(this.scene,this.camera);}
+ tick(dt,playing){if(playing)this.time+=Math.min(dt,.06);this.waterClock.value=this.time;if(this.rainDrops){const {geometry,drops}=this.rainDrops,a=geometry.attributes.position;drops.forEach((d,i)=>{const y=.2+(1-(d.offset+this.time*.85)%1)*(d.top-.2);a.setXYZ(i*2,d.x,y,d.z);a.setXYZ(i*2+1,d.x+.025,Math.max(.18,y-.14),d.z);});a.needsUpdate=true;}for(const path of this.paths){path.particles.forEach((p,i)=>{const t=(i/path.particles.length+this.time*path.speed)%1;p.position.copy(path.curve.getPoint(t));});}this.controls.update();for(const l of this.labels){const distance=this.camera.position.distanceTo(l.position);const h=2*Math.tan(this.camera.fov*Math.PI/360)*distance/Math.max(1,this.container.clientHeight)*l.userData.labelPixels;l.scale.set(h*l.userData.labelRatio,h,1);}this.renderer.render(this.scene,this.camera);}
  setLabels(visible){for(const l of this.labels)l.visible=visible;}
- dispose(){this.resizeObserver.disconnect();this.controls.dispose();this.reset();this.earthMap.dispose();this.earthNormal.dispose();this.earthSpecular.dispose();this.environment.dispose();this.renderer.dispose();}
+ dispose(){this.resizeObserver.disconnect();this.controls.dispose();this.reset();this.earthMap.dispose();this.earthNormal.dispose();this.earthSpecular.dispose();this.environment.dispose();this.frontClouds?.dispose();this.renderer.dispose();}
 }

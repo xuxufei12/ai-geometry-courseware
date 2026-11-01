@@ -8,7 +8,8 @@
     "build:geography": "node build-geography.cjs",
     "test": "node tests/geometry.cjs && node tests/chapters.cjs && node tests/numeric-input.cjs && node tests/construction.cjs && node tests/geography.cjs && node tests/chapter-drawing.cjs",
     "test:browser": "node tests/construction-browser.cjs && node tests/chapter-drawing-browser.cjs && node tests/demo-drag-browser.cjs",
-    "test:geography:browser": "node tests/geography-browser.cjs"
+    "test:geography:browser": "node tests/geography-browser.cjs",
+    "test:geography:book": "node tests/geography-book-browser.cjs"
   },
   "devDependencies": {
     "@playwright/test": "1.64.1",

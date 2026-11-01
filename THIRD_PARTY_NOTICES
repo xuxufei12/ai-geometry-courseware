@@ -62,3 +62,33 @@ Design references (no source code or model assets copied):
 - https://github.com/brunosimon/folio-2019 (MIT)
 - Three.js Water2: moving normals and water appearance reference only;
   src/geography/scenery.js implements its own lightweight material.
+
+--- Textbook figures used in the front lesson ---
+
+Copyright: People's Education Press (人民教育出版社), original textbook authors
+and illustration rightsholders. These excerpts are NOT MIT-licensed and are
+not relicensed by this repository's code license.
+
+Book: 普通高中教科书·地理·选择性必修1 自然地理基础 (2019 approved edition).
+Assets: pep-natural-cover.jpg (front cover excerpt), pep-cold-front.jpg
+(Figure 3.3, printed page 43), pep-warm-front.jpg (Figure 3.4, printed page 44).
+Only the relevant artwork is embedded for the attributed instructional
+comparison and transformation; full textbook pages/PDFs are not distributed
+in this repository. The animated reading spread is newly typeset, not a
+facsimile of the original pages. Original artwork ownership remains unchanged.
+
+Publisher reader: https://book.pep.com.cn/1438001131201/
+Textbook index: https://www.jnnu.edu.cn/dlxy/info/1143/3062.htm
+Source copy inspected (PDF pages 1, 48, 49):
+https://github.com/Chiowe/ChinaTextbook-/tree/master/高中/地理/人教版-人民教育出版社
+Source PDF SHA-256:
+7fccdf1de16bbb5b9a92a90c41084807c7ce5a1c329ee29057adaf5d37bd6a4f
+
+--- Volumetric clouds ---
+
+src/geography/cloud-volume.js adapts ray-box intersection, density-texture
+sampling and front-to-back ray marching from the Three.js r180 example:
+https://github.com/mrdoob/three.js/blob/r180/examples/webgl_volume_cloud.html
+Copyright © 2010-2025 three.js authors; the MIT license reproduced above applies.
+The courseware adds its own cold/warm cloud density shapes, deterministic
+sampling, moisture controls, shading and unfolding transition.
